@@ -1,5 +1,7 @@
+import { Grid } from "@mui/material";
+
 const LandingPage = () => {
-  return <div>LandingPage</div>;
+  return <></>;
 };
 
 export default LandingPage;

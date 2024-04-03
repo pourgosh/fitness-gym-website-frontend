@@ -1,6 +1,7 @@
-const NavLogo = ({ logo }) => {
+const NavLogo = ({ logo, displayNav }) => {
   return (
     <img
+      onClick={displayNav}
       src={logo}
       style={{
         width: "100%",
