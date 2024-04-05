@@ -3,8 +3,7 @@ import { Grid, Typography } from "@mui/material";
 const About = () => {
   return (
     <section>
-      {" "}
-      <Grid container height={200} sx={{ color: "#FFFFFF" }}>
+      <Grid container sx={{ color: "#FFFFFF" }}>
         <Grid
           position={"relative"}
           container
