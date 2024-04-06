@@ -20,7 +20,7 @@ const Goals = () => {
         <Grid item flex={1} display={"flex"} justifyContent={"center"} pt={2}>
           <img src={testImg} style={{ width: "55%", objectFit: "contain" }} />
         </Grid>
-        <Grid item pt={2} sx={{ textAlign: "center" }}>
+        <Grid item p={3} sx={{ textAlign: "center" }}>
           <GoalsText text={text} variant="subtitle" />
         </Grid>
       </Grid>
