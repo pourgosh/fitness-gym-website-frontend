@@ -17,7 +17,7 @@ const About = () => {
         </Grid>
         <Grid container item flex={6} flexDirection={"column"}>
           <Grid item>
-            <Typography variant="caption" align="left">
+            <Typography variant="string" align="left">
               Welcome to
             </Typography>
           </Grid>

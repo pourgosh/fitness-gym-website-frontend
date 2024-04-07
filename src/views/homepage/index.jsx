@@ -1,4 +1,5 @@
 import About from "../../components/about";
+import Benefits from "../../components/benefits";
 import Goals from "../../components/goals";
 import Header from "../../components/header";
 import OurProduct from "../../components/ourProduct";
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Partners />
       <Goals />
       <OurProduct />
+      <Benefits />
     </main>
   );
 };
