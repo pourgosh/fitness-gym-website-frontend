@@ -1,5 +1,6 @@
 import About from "../../components/about";
 import Benefits from "../../components/benefits";
+import Contact from "../../components/contact";
 import Goals from "../../components/goals";
 import Header from "../../components/header";
 import MembershipForm from "../../components/membershipForm";
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <OurProduct />
       <Benefits />
       <MembershipForm />
+      <Contact />
     </main>
   );
 };
