@@ -6,7 +6,7 @@ import MembersForm from "./Form";
 const MembershipForm = () => {
   return (
     <section>
-      <Grid Container>
+      <Grid container>
         <Grid item pb={2}>
           <Typography variant="h6" color={"white"} textAlign={"center"}>
             Become A Member
