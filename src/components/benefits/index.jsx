@@ -11,7 +11,7 @@ const Benefits = () => {
       <Grid container pt={4} flexDirection={"column"}>
         <BenefitsHeader />
         <Grid container item>
-          <Grid item display={"flex"} flex={2}>
+          <Grid item display={"flex"} flex={4}>
             <List
               sx={{
                 display: "flex",
@@ -37,7 +37,7 @@ const Benefits = () => {
               <BenfitsList label={"Welness Program"} />
             </List>
           </Grid>
-          <Grid item display={"flex"} flex={1} pr={2}>
+          <Grid item display={"flex"} flex={3} pr={1}>
             <BenfitsImg studioImg={studioImg} />
           </Grid>
         </Grid>

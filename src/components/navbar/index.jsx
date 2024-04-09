@@ -30,7 +30,7 @@ const NavBar = () => {
           >
             <img
               src={mutentIcon}
-              alt="icon of the gym"
+              alt="company icon"
               style={{ width: "100%" }}
             />
           </div>

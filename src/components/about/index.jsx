@@ -39,7 +39,7 @@ const About = () => {
           <Grid
             item
             paddingTop={1}
-            pl={1}
+            pl={{ xs: 3, sm: 10 }}
             pr={1}
             height={200}
             sx={{
