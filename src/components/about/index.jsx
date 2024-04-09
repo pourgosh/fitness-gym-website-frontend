@@ -1,4 +1,5 @@
 import { Grid, Typography } from "@mui/material";
+import aboutImg from "../../assets/Images/aboutImg.jpg";
 
 const About = () => {
   return (
@@ -13,7 +14,16 @@ const About = () => {
             bottom={0}
             left={10}
             sx={{ backgroundColor: "white" }}
-          ></Grid>
+          >
+            <img
+              src={aboutImg}
+              aria-hidden="true"
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </Grid>
         </Grid>
         <Grid container item flex={6} flexDirection={"column"}>
           <Grid item>

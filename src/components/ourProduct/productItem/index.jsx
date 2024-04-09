@@ -2,8 +2,8 @@ const ProductItem = ({ img, text = "Wears" }) => {
   const divStyle = {
     backgroundImage: `url(${img})`,
     backgroundRepeat: "no-repeat",
-    backgroundSize: "contain",
-    width: "180px",
+    backgroundSize: "100%",
+    width: "100%",
     display: "flex",
     alignItems: "flex-end",
   };

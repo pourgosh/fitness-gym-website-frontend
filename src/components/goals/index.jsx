@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import GoalsText from "./goalsText";
-import testImg from "../../assets/Images/5512f1de154d50572a27785e839fccc6.jpg";
+import goalsImg from "../../assets/Images/goalsImg.jpeg";
 
 const Goals = () => {
   const titleP1 = "Achieve more then your";
@@ -28,9 +28,9 @@ const Goals = () => {
           <GoalsText text={titleP2} />
         </Grid>
         <Grid item flex={1} display={"flex"} justifyContent={"center"} pt={2}>
-          <img src={testImg} style={{ width: "55%", objectFit: "contain" }} />
+          <img src={goalsImg} style={{ width: "100%", objectFit: "contain" }} />
         </Grid>
-        <Grid item pl={2} pr={2} sx={{ textAlign: "center" }}>
+        <Grid item pl={2} pt={1} pr={2} sx={{ textAlign: "center" }}>
           <GoalsText text={text} variant="string" />
         </Grid>
       </Grid>
