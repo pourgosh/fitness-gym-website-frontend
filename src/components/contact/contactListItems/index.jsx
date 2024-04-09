@@ -10,8 +10,8 @@ const ContactListItems = () => {
         <ListItemIcon>
           <EmailIcon sx={{ color: "white" }} />
           <Typography
-            variant="string"
-            color={"white"}
+            variant="list"
+            color={"primary.main"}
             sx={{ paddingLeft: "5px" }}
           >
             info@mutent.com
@@ -23,8 +23,8 @@ const ContactListItems = () => {
         <ListItemIcon>
           <PhoneIcon sx={{ color: "white" }} />
           <Typography
-            variant="string"
-            color={"white"}
+            variant="list"
+            color={"primary.main"}
             sx={{ paddingLeft: "5px" }}
           >
             0049 177 728 0 392
@@ -36,8 +36,8 @@ const ContactListItems = () => {
         <ListItemIcon>
           <LocationOnIcon sx={{ color: "white" }} />
           <Typography
-            variant="string"
-            color={"white"}
+            variant="list"
+            color={"primary.main"}
             sx={{ paddingLeft: "5px", width: "120px" }}
           >
             Oliviastr 18, 28399 Bremen, Germany

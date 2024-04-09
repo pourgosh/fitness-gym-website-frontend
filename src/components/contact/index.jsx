@@ -5,9 +5,9 @@ import ContactListItems from "./contactListItems";
 const Contact = () => {
   return (
     <section>
-      <Grid container flexDirection={"column"} pt={2}>
+      <Grid container flexDirection={"column"} pt={4}>
         <Grid item display={"flex"} justifyContent={"center"} pb={2}>
-          <Typography variant="h6" textAlign={"center"} color={"white"}>
+          <Typography variant="h1" textAlign={"center"} color={"primary.main"}>
             Contact Us
           </Typography>
         </Grid>

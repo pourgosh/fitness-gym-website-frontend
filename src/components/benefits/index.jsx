@@ -8,7 +8,7 @@ import List from "@mui/material/List";
 const Benefits = () => {
   return (
     <section>
-      <Grid container pt={2} flexDirection={"column"}>
+      <Grid container pt={4} flexDirection={"column"}>
         <BenefitsHeader />
         <Grid container item>
           <Grid item display={"flex"} flex={2}>
@@ -37,7 +37,7 @@ const Benefits = () => {
               <BenfitsList label={"Welness Program"} />
             </List>
           </Grid>
-          <Grid item display={"flex"} flex={1} pr={1} pt={2}>
+          <Grid item display={"flex"} flex={1} pr={2}>
             <BenfitsImg studioImg={studioImg} />
           </Grid>
         </Grid>

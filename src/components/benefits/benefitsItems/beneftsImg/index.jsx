@@ -3,7 +3,7 @@ const BenfitsImg = ({ studioImg }) => {
     <img
       src={studioImg}
       alt="fitness studio image"
-      style={{ width: "100%", height: "90%" }}
+      style={{ width: "100%", height: "100%" }}
     />
   );
 };

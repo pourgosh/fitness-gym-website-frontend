@@ -4,8 +4,8 @@ import PartnersItem from "./partnersItem";
 const Partners = () => {
   return (
     <section>
-      <Grid container justifyContent={"center"} pt={2}>
-        <Typography variant="h6" color={"white"}>
+      <Grid container justifyContent={"center"} pt={4}>
+        <Typography variant="h1" color={"primary.main"}>
           Partners
         </Typography>
       </Grid>

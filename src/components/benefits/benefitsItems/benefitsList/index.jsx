@@ -15,8 +15,8 @@ const BenfitsList = ({ label = "Free Classes" }) => {
         <ListItemText
           primary={label}
           primaryTypographyProps={{
-            color: "white",
-            variant: "caption",
+            color: "primary.main",
+            variant: "list",
             lineHeight: "1",
           }}
         />

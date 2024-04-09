@@ -1,9 +1,9 @@
 import { Grid, Typography } from "@mui/material";
 
-const GoalsText = ({ text, variant = "h6", pl }) => {
+const GoalsText = ({ text, variant = "h1", pl }) => {
   return (
-    <Grid item>
-      <Typography variant={variant} pl={pl} color={"white"}>
+    <Grid item pt={2}>
+      <Typography variant={variant} pl={pl} color={"primary.main"}>
         {text}
       </Typography>
     </Grid>

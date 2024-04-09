@@ -27,6 +27,7 @@ const MembersForm = () => {
           textAlign: "center",
           textTransform: "none",
           backgroundColor: "white",
+          fontFamily: "textFont",
         }}
       >
         Submit

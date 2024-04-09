@@ -19,6 +19,7 @@ const ProductItem = ({ img, text = "Wears" }) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          fontFamily: "textFont",
         }}
       >
         <p>{text}</p>

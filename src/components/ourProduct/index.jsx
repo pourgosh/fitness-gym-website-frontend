@@ -5,9 +5,9 @@ import ProductItem from "./productItem";
 const OurProduct = () => {
   return (
     <section>
-      <Grid container flexDirection={"column"}>
+      <Grid container flexDirection={"column"} pt={4}>
         <Grid item pb={2}>
-          <Typography variant="h6" color={"white"} textAlign={"center"}>
+          <Typography variant="h1" color={"primary.main"} textAlign={"center"}>
             Our Products
           </Typography>
         </Grid>

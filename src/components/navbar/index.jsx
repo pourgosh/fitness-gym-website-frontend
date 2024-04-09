@@ -17,7 +17,7 @@ const NavBar = () => {
         paddingLeft={1}
         paddingRight={1}
         container
-        sx={{ backgroundColor: "#212121" }}
+        sx={{ backgroundColor: "primary.sub" }}
       >
         <Grid item flex={1}>
           <div

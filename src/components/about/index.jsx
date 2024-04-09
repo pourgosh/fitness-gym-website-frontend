@@ -3,30 +3,41 @@ import { Grid, Typography } from "@mui/material";
 const About = () => {
   return (
     <section>
-      <Grid container sx={{ color: "#FFFFFF" }} pt={2}>
+      <Grid container color={"primary.main"} pt={2}>
         <Grid position={"relative"} container item flex={4}>
           <Grid
             item
             width={150}
             height={200}
             position={"absolute"}
-            bottom={30}
+            bottom={0}
             left={10}
             sx={{ backgroundColor: "white" }}
           ></Grid>
         </Grid>
         <Grid container item flex={6} flexDirection={"column"}>
           <Grid item>
-            <Typography variant="string" align="left">
+            <Typography variant="list" align="left">
               Welcome to
             </Typography>
           </Grid>
-          <Grid item pl={2}>
-            <Typography variant="h6" align="left">
+          <Grid item pl={2} pt={2}>
+            <Typography variant="h1" align="left">
               Mutent Gym
             </Typography>
           </Grid>
-          <Grid item paddingTop={1} pl={1} pr={1}>
+          <Grid
+            item
+            paddingTop={1}
+            pl={1}
+            pr={1}
+            height={200}
+            sx={{
+              overflow: "auto",
+              overflowY: "scroll",
+              textOverflow: "ellipsis",
+            }}
+          >
             <Typography variant="string" align="left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.

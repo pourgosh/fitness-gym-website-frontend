@@ -1,11 +1,22 @@
 import { Grid, Typography } from "@mui/material";
 const BenefitsHeader = () => {
   return (
-    <Grid item display={"flex"} flexDirection={"column"} alignItems={"center"}>
-      <Typography color={"white"} textAlign={"center"} variant="h6">
+    <Grid
+      item
+      display={"flex"}
+      flexDirection={"column"}
+      alignItems={"center"}
+      pb={2}
+    >
+      <Typography
+        color={"primary.main"}
+        textAlign={"center"}
+        variant="h1"
+        sx={{ lineHeight: "30px" }}
+      >
         Membership
       </Typography>
-      <Typography color={"white"} textAlign={"center"} variant="h6">
+      <Typography color={"primary.main"} textAlign={"center"} variant="h1">
         Benefits
       </Typography>
     </Grid>

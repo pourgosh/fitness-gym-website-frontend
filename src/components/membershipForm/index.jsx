@@ -7,8 +7,15 @@ const MembershipForm = () => {
   return (
     <section>
       <Grid container>
-        <Grid item display={"flex"} flex={1} justifyContent={"center"} pb={2}>
-          <Typography variant="h6" color={"white"} textAlign={"center"}>
+        <Grid
+          item
+          display={"flex"}
+          flex={1}
+          justifyContent={"center"}
+          pt={4}
+          pb={2}
+        >
+          <Typography variant="h1" color={"primary.main"} textAlign={"center"}>
             Become A Member
           </Typography>
         </Grid>
