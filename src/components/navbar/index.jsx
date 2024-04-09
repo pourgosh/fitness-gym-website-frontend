@@ -3,6 +3,8 @@ import { useState } from "react";
 import NavLinks from "./navItems/NavLinks";
 import NavLogo from "./navItems/NavLogo";
 import burgerIcon from "/burger-menu-svgrepo-com.svg";
+import mutentIcon from "../../assets/logo.svg";
+
 import "./navbar.css";
 
 const NavBar = () => {
@@ -24,9 +26,14 @@ const NavBar = () => {
             style={{
               width: "50px",
               height: "50px",
-              backgroundColor: "white",
             }}
-          ></div>
+          >
+            <img
+              src={mutentIcon}
+              alt="icon of the gym"
+              style={{ width: "100%" }}
+            />
+          </div>
         </Grid>
         <Grid item width={50} height={50} display={"flex"}>
           <NavLogo logo={burgerIcon} displayNav={displayNav} />
