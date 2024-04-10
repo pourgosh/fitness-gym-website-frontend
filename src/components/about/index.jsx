@@ -7,8 +7,8 @@ const About = () => {
       <Grid
         container
         color={"primary.main"}
-        pr={{ lg: 3 }}
-        pl={{ lg: 3 }}
+        pr={{ md: 5, xl: 0, xxl: 5 }}
+        pl={{ md: 5, xl: 0, xxl: 5 }}
         pt={{ xs: 2, sm: 5, lg: 12, xl: 30 }}
       >
         <Grid position={"relative"} container item flex={4}>
@@ -32,7 +32,7 @@ const About = () => {
             }}
             position={"absolute"}
             bottom={0}
-            left={{ xs: 10, lg: 20, xl: 0 }}
+            left={{ xs: 10, lg: 20, xl: -20, xxl: 0 }}
             sx={{ backgroundColor: "white" }}
           >
             <img
