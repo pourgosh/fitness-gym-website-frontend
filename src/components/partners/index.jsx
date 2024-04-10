@@ -12,7 +12,11 @@ const Partners = () => {
           Partners
         </Typography>
       </Grid>
-      <Grid container justifyContent={"space-around"} pt={2}>
+      <Grid
+        container
+        justifyContent={{ xs: "space-around", lg: "space-evenly" }}
+        pt={2}
+      >
         <PartnersItem img={amazonLogo} alt={"logo of amazon"} />
         <PartnersItem img={gorillaMindLogo} alt={"logo of gorilla-mind"} />
         <PartnersItem img={telekomLogo} alt={"logo of telekom"} />

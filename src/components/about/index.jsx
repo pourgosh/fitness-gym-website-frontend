@@ -4,15 +4,35 @@ import aboutImg from "../../assets/Images/aboutImg.jpg";
 const About = () => {
   return (
     <section>
-      <Grid container color={"primary.main"} pt={2}>
+      <Grid
+        container
+        color={"primary.main"}
+        pr={{ lg: 3 }}
+        pl={{ lg: 3 }}
+        pt={{ xs: 2, sm: 5, lg: 12, xl: 30 }}
+      >
         <Grid position={"relative"} container item flex={4}>
           <Grid
             item
-            width={150}
-            height={200}
+            width={{
+              xs: 150,
+              sm: 170,
+              between: 250,
+              md: 300,
+              lg: 350,
+              xl: 600,
+            }}
+            height={{
+              xs: 200,
+              sm: 200,
+              between: 250,
+              md: 300,
+              lg: 350,
+              xl: 500,
+            }}
             position={"absolute"}
             bottom={0}
-            left={10}
+            left={{ xs: 10, lg: 20, xl: 0 }}
             sx={{ backgroundColor: "white" }}
           >
             <img
@@ -26,12 +46,12 @@ const About = () => {
           </Grid>
         </Grid>
         <Grid container item flex={6} flexDirection={"column"}>
-          <Grid item>
+          <Grid item pl={{ sm: 2, xl: 8 }} pb={{ lg: 2 }}>
             <Typography variant="list" align="left">
               Welcome to
             </Typography>
           </Grid>
-          <Grid item pl={2} pt={2}>
+          <Grid item pl={{ xs: 2, sm: 4, xl: 12 }} pt={{ xs: 2, sm: 4 }}>
             <Typography variant="h1" align="left">
               Mutent Gym
             </Typography>
@@ -39,7 +59,7 @@ const About = () => {
           <Grid
             item
             paddingTop={1}
-            pl={{ xs: 3, sm: 10 }}
+            pl={{ xs: 3, xl: 8 }}
             pr={1}
             height={200}
             sx={{

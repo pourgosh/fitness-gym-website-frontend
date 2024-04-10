@@ -14,7 +14,7 @@ const Goals = () => {
   auctor eu augue ut lectus arcu bibendum at.`;
   return (
     <section>
-      <Grid container pt={2} flexDirection={"column"}>
+      <Grid container pt={4} flexDirection={"column"}>
         <Grid
           item
           display={"flex"}
