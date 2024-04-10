@@ -18,11 +18,11 @@ export const theme = createTheme({
     },
     string: {
       fontFamily: "textFont",
-      fontSize: "15px",
+      fontSize: "13px",
     },
     list: {
       fontFamily: "textFont",
-      fontSize: "12px",
+      fontSize: "10px",
     },
   },
 });
