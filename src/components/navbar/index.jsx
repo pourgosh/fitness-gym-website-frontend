@@ -1,5 +1,6 @@
 import { Grid } from "@mui/material";
 import { useState } from "react";
+import "./navbar.css";
 import NavLinks from "./navItems/NavLinks";
 import NavLogo from "./navItems/NavLogo";
 import burgerIcon from "/burger-menu-svgrepo-com.svg";
@@ -16,18 +17,14 @@ const NavBar = () => {
   return (
     <nav className="nav-ss">
       <Grid
-        paddingLeft={1}
-        paddingRight={1}
+        pl={{ xs: 1, md: 7, lg: 10 }}
+        pr={{ xs: 1, md: 7 }}
         container
+        height={{ lg: 80 }}
         sx={{ backgroundColor: "primary.sub" }}
       >
         <Grid item flex={1}>
-          <div
-            style={{
-              width: "50px",
-              height: "50px",
-            }}
-          >
+          <div className="mutentIcon">
             <img
               src={mutentIcon}
               alt="company icon"
@@ -35,11 +32,30 @@ const NavBar = () => {
             />
           </div>
         </Grid>
-        <Grid item width={50} height={50} display={"flex"}>
+        <Grid
+          item
+          width={50}
+          height={50}
+          display={{ xs: "flex", lg: "none" }}
+          className="burgerMenuImg"
+        >
           <NavLogo logo={burgerIcon} displayNav={displayNav} />
         </Grid>
+        <Grid
+          item
+          display={{ xs: "none", lg: "flex" }}
+          justifyContent={"center"}
+          alignItems={"center"}
+          pt={3}
+        >
+          <NavLinks label="Membership" />
+          <NavLinks label="Contact" />
+          <NavLinks label="About" />
+          <NavLinks label="Cart" />
+          <NavLinks />
+        </Grid>
         <Grid container item flexDirection={"column"} alignItems={"center"}>
-          {navItems && (
+          {navItems ? (
             <Grid item display={"flex"} flexDirection={"column"}>
               <NavLinks label="Membership" />
               <NavLinks label="Contact" />
@@ -47,7 +63,7 @@ const NavBar = () => {
               <NavLinks label="Cart" />
               <NavLinks />
             </Grid>
-          )}
+          ) : null}
         </Grid>
       </Grid>
     </nav>
