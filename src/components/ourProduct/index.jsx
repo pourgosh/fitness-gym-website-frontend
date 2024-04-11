@@ -1,20 +1,27 @@
 import { Grid, Typography } from "@mui/material";
-import wearsImg from "../../assets/Images/products/8a9274641da13334c9e66a50ef8c9edf.jpg";
+import wearsImg from "../../assets/Images/products/prod.jpg";
 import supplementsImg from "../../assets/Images/products/30860912a45f2f85c4946bba091919d4.jpg";
 import ProductItem from "./productItem";
+import "./products.css";
 
 const OurProduct = () => {
   return (
     <section>
-      <Grid container flexDirection={"column"} pt={4}>
-        <Grid item pb={2}>
+      <Grid container mt={{ xs: 4, lg: 0 }} pb={2}>
+        <Grid item flex={1} display={"flex"} justifyContent={"center"}>
           <Typography variant="h1" color={"primary.main"} textAlign={"center"}>
             Our Products
           </Typography>
         </Grid>
-        <Grid item height={200} display={"flex"} pl={1} pr={1} gap={2}>
+      </Grid>
+      <Grid container flexDirection={"column"}>
+        <Grid container item flex={1} display={"flex"}>
           <ProductItem img={wearsImg} />
-          <ProductItem img={supplementsImg} text={"Supplements"} />
+          <ProductItem
+            img={supplementsImg}
+            text={"Supplements"}
+            alt="Supplements-Image"
+          />
         </Grid>
       </Grid>
     </section>

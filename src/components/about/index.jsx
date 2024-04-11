@@ -1,10 +1,65 @@
 import { Grid, Typography } from "@mui/material";
 import aboutImg from "../../assets/Images/aboutImg.jpg";
-
+import "./about.css";
 const About = () => {
   return (
     <section>
-      <Grid
+      <Grid container flexDirection={"column"} color={"primary.main"} pt={1}>
+        <Grid
+          item
+          pl={{ xs: 20, sm: 25, between: 35, md: 55, lg: 70, xl: 95, xxl: 110 }}
+        >
+          <Typography variant="list">Welcome To</Typography>
+          <Typography
+            variant="h1"
+            sx={{
+              marginTop: { xs: "15px", lg: "30px" },
+              marginLeft: "20px",
+              lineHeight: 1.5,
+            }}
+          >
+            Mutant Fitness
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid container color={"primary.main"}>
+        <Grid item flex={1} display={"flex"} justifyContent={"center"}>
+          <img className="aboutImg" src={aboutImg} aria-hidden="true" />
+        </Grid>
+        <Grid
+          item
+          flex={1}
+          display={"flex"}
+          alignItems={"center"}
+          sx={{
+            overflow: "auto",
+            overflowY: "scroll",
+            textOverflow: "ellipsis",
+          }}
+        >
+          <Typography
+            variant="string"
+            align="left"
+            pr={{ md: 10, lg: 18, xxl: 20 }}
+            sx={{ height: { xs: "60%" } }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat
+            in egestas erat imperdiet sed. Mi in nulla posuere sollicitudin
+            aliquam. Aliquet risus feugiat in ante. Amet justo donec enim diam
+            vulputate. Ut etiam sit amet nisl purus in mollis nunc sed. Vitae
+            auctor eu augue ut lectus arcu bibendum at. Commodo viverra maecenas
+            accumsan lacus vel facilisis volutpat. Felis eget velit aliquet
+            sagittis id consectetur.
+          </Typography>
+        </Grid>
+      </Grid>
+    </section>
+  );
+};
+
+export default About;
+/*<Grid
         container
         color={"primary.main"}
         pr={{ md: 5, xl: 0, xxl: 5 }}
@@ -80,9 +135,4 @@ const About = () => {
             </Typography>
           </Grid>
         </Grid>
-      </Grid>
-    </section>
-  );
-};
-
-export default About;
+      </Grid> */

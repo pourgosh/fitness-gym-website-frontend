@@ -7,7 +7,7 @@ import telekomLogo from "../../assets/Images/sponsorLogos/dl-telekom-logo-01.jpg
 const Partners = () => {
   return (
     <section>
-      <Grid container justifyContent={"center"} pt={4}>
+      <Grid container justifyContent={"center"} mt={4}>
         <Typography variant="h1" color={"primary.main"}>
           Partners
         </Typography>
@@ -15,7 +15,7 @@ const Partners = () => {
       <Grid
         container
         justifyContent={{ xs: "space-around", lg: "space-evenly" }}
-        pt={2}
+        mt={4}
       >
         <PartnersItem img={amazonLogo} alt={"logo of amazon"} />
         <PartnersItem img={gorillaMindLogo} alt={"logo of gorilla-mind"} />
