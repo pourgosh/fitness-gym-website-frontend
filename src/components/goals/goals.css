@@ -10,5 +10,6 @@
 @media (min-width: 1400px) {
   .goalsImg {
     width: 50%;
+    border: 2px solid #d9d9d9;
   }
 }

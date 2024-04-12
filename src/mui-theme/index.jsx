@@ -16,8 +16,10 @@ export const theme = createTheme({
       between: 600,
       md: 800,
       lg: 1100,
+      between2: 1200,
       xl: 1400,
       xxl: 1500,
+      xxxl: 2000,
     },
   },
   typography: {
@@ -28,11 +30,15 @@ export const theme = createTheme({
       fontSize: "1rem",
       fontWeight: 500,
       "@media (min-width:500px)": {
-        fontSize: "1.3rem",
+        fontSize: "1.4rem",
         fontWeight: 700,
       },
       "@media (min-width:1100px)": {
         fontSize: "1.6rem",
+        fontWeight: 700,
+      },
+      "@media (min-width:1900px)": {
+        fontSize: "2.5rem",
         fontWeight: 700,
       },
     },
@@ -44,6 +50,9 @@ export const theme = createTheme({
       },
       "@media (min-width:1100px)": {
         fontSize: "1.4rem",
+      },
+      "@media (min-width:1400px)": {
+        fontSize: "1.8rem",
       },
     },
     list: {

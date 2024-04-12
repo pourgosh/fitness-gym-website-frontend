@@ -4,6 +4,7 @@ import BenefitsHeader from "./benefitsItems/benefitsHeader";
 import BenfitsImg from "./benefitsItems/beneftsImg";
 import BenfitsList from "./benefitsItems/benefitsList";
 import List from "@mui/material/List";
+import "./benifts.css";
 
 const Benefits = () => {
   return (
@@ -16,6 +17,9 @@ const Benefits = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
+                justifyContent: { between: "center" },
+
+                ml: { between: 2, lg: 10, xxl: 16, xxxl: 25 },
               }}
             >
               <BenfitsList label={"24/7 Access"} />
@@ -28,6 +32,7 @@ const Benefits = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
+                justifyContent: { between: "center" },
               }}
             >
               <BenfitsList label={"Worldwide Club Access"} />
@@ -35,9 +40,11 @@ const Benefits = () => {
               <BenfitsList label={"Health-Plan discounts"} />
 
               <BenfitsList label={"Welness Program"} />
+
+              <BenfitsList label={"Massive Community"} />
             </List>
           </Grid>
-          <Grid item display={"flex"} flex={3} pr={1}>
+          <Grid item display={"flex"} justifyContent={"center"} flex={3}>
             <BenfitsImg studioImg={studioImg} />
           </Grid>
         </Grid>

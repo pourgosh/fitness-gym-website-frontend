@@ -12,7 +12,7 @@ const BenefitsHeader = () => {
         color={"primary.main"}
         textAlign={"center"}
         variant="h1"
-        sx={{ lineHeight: "30px" }}
+        sx={{ lineHeight: { xs: "3rem", xxl: "5rem" } }}
       >
         Membership
       </Typography>

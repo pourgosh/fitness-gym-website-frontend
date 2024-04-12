@@ -7,6 +7,8 @@ const Footer = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        border: "2px solid #d9d9d9",
+        marginTop: "10px",
       }}
     >
       PUSH PAST YOUR LIMITS!

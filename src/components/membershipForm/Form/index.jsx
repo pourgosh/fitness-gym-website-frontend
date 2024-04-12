@@ -3,17 +3,7 @@ import { Button } from "@mui/material";
 
 const MembersForm = () => {
   return (
-    <form
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "rgba(27,26, 25, 85%)",
-        height: "70%",
-        width: "70%",
-        gap: "10px",
-        padding: "15px 15px",
-      }}
-    >
+    <form className="membershipForm">
       <FormInput />
       <FormInput placeholder="Last Name" ariaLabel="last-name" />
       <FormInput placeholder="info@contact.com" ariaLabel="email" />
@@ -22,7 +12,7 @@ const MembersForm = () => {
         variant={"contained"}
         sx={{
           alignSelf: "center",
-          height: "25px",
+          height: { xs: "30px" },
           color: "black",
           textAlign: "center",
           textTransform: "none",

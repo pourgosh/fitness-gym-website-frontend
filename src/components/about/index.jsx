@@ -4,16 +4,29 @@ import "./about.css";
 const About = () => {
   return (
     <section>
-      <Grid container flexDirection={"column"} color={"primary.main"} pt={1}>
+      <Grid
+        container
+        flexDirection={"column"}
+        color={"primary.main"}
+        pt={{ xs: 1, md: 4 }}
+      >
         <Grid
           item
-          pl={{ xs: 20, sm: 25, between: 35, md: 55, lg: 70, xl: 95, xxl: 110 }}
+          pl={{
+            xs: 20,
+            sm: 25,
+            between: 35,
+            md: 45,
+            lg: 70,
+            xl: 95,
+            xxxl: 120,
+          }}
         >
           <Typography variant="list">Welcome To</Typography>
           <Typography
             variant="h1"
             sx={{
-              marginTop: { xs: "15px", lg: "30px" },
+              marginTop: { xs: "15px", lg: "30px", xxl: "40px" },
               marginLeft: "20px",
               lineHeight: 1.5,
             }}
@@ -23,24 +36,27 @@ const About = () => {
         </Grid>
       </Grid>
       <Grid container color={"primary.main"}>
-        <Grid item flex={1} display={"flex"} justifyContent={"center"}>
+        <Grid item flex={3} display={"flex"} justifyContent={"center"}>
           <img className="aboutImg" src={aboutImg} aria-hidden="true" />
         </Grid>
         <Grid
           item
-          flex={1}
+          flex={5}
           display={"flex"}
-          alignItems={"center"}
+          justifyContent={"center"}
+          alignItems={"flex-start"}
+          pt={{ xs: 0, md: 3, xxxl: 10 }}
           sx={{
             overflow: "auto",
             overflowY: "scroll",
             textOverflow: "ellipsis",
+            height: { xs: "100px", between: "150px", lg: "fit-content" },
           }}
         >
           <Typography
             variant="string"
             align="left"
-            pr={{ md: 10, lg: 18, xxl: 20 }}
+            pr={{ sm: 5, md: 10, lg: 18, xxl: 20, xxxl: 30 }}
             sx={{ height: { xs: "60%" } }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -4,8 +4,8 @@ import goalsImg from "../../assets/Images/goalsImg.jpeg";
 import "./goals.css";
 
 const Goals = () => {
-  const titleP1 = "Achieve more then your";
-  const titleP2 = "limits";
+  const titleP1 = "Achieve more then ";
+  const titleP2 = "your limits";
 
   const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat
@@ -25,11 +25,16 @@ const Goals = () => {
           alignItems={"center"}
           pl={1}
           pr={1}
+          gap={1}
         >
           <GoalsText text={titleP1} />
           <GoalsText text={titleP2} />
         </Grid>
-        <Grid container item flexDirection={{ xs: "column", lg: "row" }}>
+        <Grid
+          container
+          item
+          flexDirection={{ xs: "column", lg: "row-reverse" }}
+        >
           <Grid item flex={1} display={"flex"} justifyContent={"center"} pt={2}>
             <img className="goalsImg" src={goalsImg} />
           </Grid>
@@ -37,10 +42,13 @@ const Goals = () => {
             item
             display={"flex"}
             alignItems={"center"}
+            justifyContent={"center"}
             flex={1}
-            pl={2}
-            pr={{ xs: 2, lg: 18, xxl: 20 }}
-            sx={{ textAlign: "center" }}
+            pl={{ xs: 10, lg: 7, xl: 14, xxxl: 21 }}
+            pr={{ xs: 10, lg: 18, xxl: 20 }}
+            sx={{
+              textAlign: { xs: "center", lg: "left" },
+            }}
           >
             <GoalsText text={text} variant="string" />
           </Grid>
