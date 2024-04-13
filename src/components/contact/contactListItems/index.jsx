@@ -8,7 +8,7 @@ const ContactListItems = () => {
     <>
       <ListItem>
         <ListItemIcon>
-          <EmailIcon sx={{ color: "white" }} />
+          <EmailIcon sx={{ color: "white", fontSize: "auto" }} />
           <Typography
             variant="list"
             color={"primary.main"}
@@ -38,7 +38,10 @@ const ContactListItems = () => {
           <Typography
             variant="list"
             color={"primary.main"}
-            sx={{ paddingLeft: "5px", width: "120px" }}
+            sx={{
+              paddingLeft: "5px",
+              width: { xs: "120px", lg: "150px", xxl: "160px" },
+            }}
           >
             Oliviastr 18, 28399 Bremen, Germany
           </Typography>

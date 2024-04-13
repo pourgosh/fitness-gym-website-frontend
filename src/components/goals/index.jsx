@@ -15,7 +15,11 @@ const Goals = () => {
   auctor eu augue ut lectus arcu bibendum at.`;
   return (
     <section>
-      <Grid container pt={{ xs: 4, lg: 8 }} flexDirection={"column"}>
+      <Grid
+        container
+        mt={{ xs: 2, sm: 2, md: 3, lg: 6, xl: 8, xxl: 12, xxxl: 10 }}
+        flexDirection={"column"}
+      >
         <Grid
           item
           display={"flex"}
@@ -35,7 +39,13 @@ const Goals = () => {
           item
           flexDirection={{ xs: "column", lg: "row-reverse" }}
         >
-          <Grid item flex={1} display={"flex"} justifyContent={"center"} pt={2}>
+          <Grid
+            item
+            flex={1}
+            display={"flex"}
+            justifyContent={"center"}
+            mt={{ xs: 2, sm: 2, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
+          >
             <img className="goalsImg" src={goalsImg} />
           </Grid>
           <Grid
@@ -44,10 +54,15 @@ const Goals = () => {
             alignItems={"center"}
             justifyContent={"center"}
             flex={1}
+            mt={2}
             pl={{ xs: 10, lg: 7, xl: 14, xxxl: 21 }}
             pr={{ xs: 10, lg: 18, xxl: 20 }}
             sx={{
               textAlign: { xs: "center", lg: "left" },
+              maxHeight: { xs: "110px", md: "100px", lg: "100%" },
+              overflow: "auto",
+              overflowY: "scroll",
+              textOverflow: "ellipsis",
             }}
           >
             <GoalsText text={text} variant="string" />

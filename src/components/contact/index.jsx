@@ -6,7 +6,11 @@ import "./contact.css";
 const Contact = () => {
   return (
     <section>
-      <Grid container flexDirection={"column"} pt={4}>
+      <Grid
+        container
+        flexDirection={"column"}
+        pt={{ xs: 4, sm: 6, md: 8, xxl: 12, xxxl: 10 }}
+      >
         <Grid item display={"flex"} justifyContent={"center"} pb={2}>
           <Typography variant="h1" textAlign={"center"} color={"primary.main"}>
             Contact Us
@@ -20,10 +24,18 @@ const Contact = () => {
             justifyContent={"center"}
             flex={1}
             ml={{ between: 2, lg: 10, xxl: 16, xxxl: 25 }}
+            pl={{ xxxl: 5 }}
           >
             <ContactListItems />
           </Grid>
-          <Grid item flex={1} justifyContent={"center"} display={"flex"} mr={1}>
+          <Grid
+            item
+            flex={1}
+            justifyContent={"center"}
+            display={"flex"}
+            mr={1}
+            mt={{ xs: 1, md: 4, xxl: 8, xxxl: 6 }}
+          >
             <img className="contactImg" src={contactImg} aria-hidden="true" />
           </Grid>
         </Grid>

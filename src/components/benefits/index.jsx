@@ -9,7 +9,11 @@ import "./benifts.css";
 const Benefits = () => {
   return (
     <section>
-      <Grid container pt={4} flexDirection={"column"}>
+      <Grid
+        container
+        pt={{ xs: 2, sm: 4, md: 6, lg: 10, xl: 8, xxl: 12, xxxl: 10 }}
+        flexDirection={"column"}
+      >
         <BenefitsHeader />
         <Grid container item>
           <Grid item display={"flex"} flex={4}>
@@ -44,7 +48,13 @@ const Benefits = () => {
               <BenfitsList label={"Massive Community"} />
             </List>
           </Grid>
-          <Grid item display={"flex"} justifyContent={"center"} flex={3}>
+          <Grid
+            item
+            display={"flex"}
+            justifyContent={"center"}
+            flex={3}
+            pt={{ xs: 0, sm: 4, lg: 5, xl: 6, xxxl: 7 }}
+          >
             <BenfitsImg studioImg={studioImg} />
           </Grid>
         </Grid>

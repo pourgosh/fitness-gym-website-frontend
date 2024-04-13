@@ -26,8 +26,8 @@ const About = () => {
           <Typography
             variant="h1"
             sx={{
-              marginTop: { xs: "15px", lg: "30px", xxl: "40px" },
-              marginLeft: "20px",
+              marginTop: { xs: "15px", lg: "30px", xxl: "40px", xxxl: "50px" },
+              marginLeft: { xs: "20px", xxl: "50px" },
               lineHeight: 1.5,
             }}
           >
@@ -45,7 +45,7 @@ const About = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"flex-start"}
-          pt={{ xs: 0, md: 3, xxxl: 10 }}
+          pt={{ xs: 0, sm: 2, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
           sx={{
             overflow: "auto",
             overflowY: "scroll",
@@ -56,7 +56,7 @@ const About = () => {
           <Typography
             variant="string"
             align="left"
-            pr={{ sm: 5, md: 10, lg: 18, xxl: 20, xxxl: 30 }}
+            pr={{ sm: 5, md: 10, lg: 18, xxl: 20, xxxl: 85 }}
             sx={{ height: { xs: "60%" } }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

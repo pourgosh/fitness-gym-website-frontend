@@ -7,7 +7,11 @@ import "./products.css";
 const OurProduct = () => {
   return (
     <section>
-      <Grid container mt={{ xs: 4, lg: 0 }} pb={2}>
+      <Grid
+        container
+        mt={{ xs: 4, sm: 5, md: 6, xl: 8, xxl: 12, xxxl: 10 }}
+        pb={2}
+      >
         <Grid item flex={1} display={"flex"} justifyContent={"center"}>
           <Typography variant="h1" color={"primary.main"} textAlign={"center"}>
             Our Products

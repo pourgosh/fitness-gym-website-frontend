@@ -7,7 +7,7 @@ import "./membershipForm.css";
 const MembershipForm = () => {
   return (
     <section>
-      <Grid container pt={{ xs: 0, xxl: 5 }}>
+      <Grid container pt={{ xs: 0, sm: 3, lg: 5, xl: 8, xxl: 12, xxxl: 10 }}>
         <Grid
           item
           display={"flex"}
@@ -23,6 +23,7 @@ const MembershipForm = () => {
         <Grid
           container
           item
+          mt={{ xs: 0, sm: 2, md: 3, xl: 8 }}
           position={"relative"}
           width={"100%"}
           sx={{ overflow: "hidden" }}

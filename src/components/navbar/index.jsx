@@ -15,13 +15,16 @@ const NavBar = () => {
     setNavItems(!navItems);
   };
   return (
-    <nav className="nav-ss">
+    <nav
+      className="nav-ss"
+      style={{ position: "relative", width: "100%", zIndex: 100000000000000 }}
+    >
       <Grid
         pl={{ xs: 1, md: 7, lg: 10 }}
         pr={{ xs: 1, md: 7 }}
         container
         height={{ lg: 80 }}
-        sx={{ backgroundColor: "primary.sub" }}
+        sx={{ backgroundColor: "primary.sub", position: "fixed" }}
       >
         <Grid item flex={1}>
           <div className="mutentIcon">
