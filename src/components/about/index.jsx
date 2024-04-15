@@ -48,7 +48,7 @@ const About = () => {
           pt={{ xs: 0, sm: 2, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
           sx={{
             overflow: "auto",
-            overflowY: "scroll",
+            overflowY: "auto",
             textOverflow: "ellipsis",
             height: { xs: "100px", between: "150px", lg: "fit-content" },
           }}

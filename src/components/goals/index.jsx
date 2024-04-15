@@ -61,7 +61,7 @@ const Goals = () => {
               textAlign: { xs: "center", lg: "left" },
               maxHeight: { xs: "110px", md: "100px", lg: "100%" },
               overflow: "auto",
-              overflowY: "scroll",
+              overflowY: "auto",
               textOverflow: "ellipsis",
             }}
           >
