@@ -1,0 +1,59 @@
+.membershipForm {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(27, 26, 25, 85%);
+  gap: 10px;
+  padding: 15px;
+  width: 100%;
+}
+.memberFormBg {
+  width: 100%;
+  height: auto;
+  border: 2px solid #d9d9d9;
+}
+
+.memberFormBg2 {
+  width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+  border: 2px solid #d9d9d9;
+}
+
+@media (min-width: 550px) {
+  .membershipForm {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .membershipForm {
+    justify-content: center;
+    input {
+      font-size: 20px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .membershipForm {
+    justify-content: center;
+    width: 60%;
+    gap: 1rem;
+    input {
+      font-size: 18px;
+    }
+  }
+  .memberFormBg {
+    width: 50%;
+  }
+
+  .memberFormBg2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .membershipForm {
+    input {
+      font-size: 30px;
+    }
+  }
+}

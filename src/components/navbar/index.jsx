@@ -1,8 +1,11 @@
 import { Grid } from "@mui/material";
 import { useState } from "react";
+import "./navbar.css";
 import NavLinks from "./navItems/NavLinks";
 import NavLogo from "./navItems/NavLogo";
 import burgerIcon from "/burger-menu-svgrepo-com.svg";
+import mutentIcon from "../../assets/logo.svg";
+
 import "./navbar.css";
 
 const NavBar = () => {
@@ -12,25 +15,50 @@ const NavBar = () => {
     setNavItems(!navItems);
   };
   return (
-    <nav className="nav-ss">
+    <nav
+      className="nav-ss"
+      style={{ position: "relative", width: "100%", zIndex: 100000000000000 }}
+    >
       <Grid
-        paddingLeft={1}
-        paddingRight={1}
+        pl={{ xs: 1, md: 7, lg: 10 }}
+        pr={{ xs: 1, md: 7 }}
         container
-        flexDirection={"row-reverse"}
-        sx={{ backgroundColor: "#212121" }}
+        height={{ lg: 80 }}
+        sx={{ backgroundColor: "primary.sub", position: "fixed" }}
       >
+        <Grid item flex={1}>
+          <div className="mutentIcon">
+            <img
+              src={mutentIcon}
+              alt="company icon"
+              style={{ width: "100%" }}
+            />
+          </div>
+        </Grid>
         <Grid
-          container
           item
-          flexDirection={"column"}
-          alignItems={"flex-end"}
-          flex={1}
+          width={50}
+          height={50}
+          display={{ xs: "flex", lg: "none" }}
+          className="burgerMenuImg"
         >
-          <Grid item width={50} height={50} display={"flex"}>
-            <NavLogo logo={burgerIcon} displayNav={displayNav} />
-          </Grid>
-          {navItems && (
+          <NavLogo logo={burgerIcon} displayNav={displayNav} />
+        </Grid>
+        <Grid
+          item
+          display={{ xs: "none", lg: "flex" }}
+          justifyContent={"center"}
+          alignItems={"center"}
+          pt={3}
+        >
+          <NavLinks label="Membership" />
+          <NavLinks label="Contact" />
+          <NavLinks label="About" />
+          <NavLinks label="Cart" />
+          <NavLinks />
+        </Grid>
+        <Grid container item flexDirection={"column"} alignItems={"center"}>
+          {navItems ? (
             <Grid item display={"flex"} flexDirection={"column"}>
               <NavLinks label="Membership" />
               <NavLinks label="Contact" />
@@ -38,16 +66,7 @@ const NavBar = () => {
               <NavLinks label="Cart" />
               <NavLinks />
             </Grid>
-          )}
-        </Grid>
-        <Grid item flex={1}>
-          <div
-            style={{
-              width: "50px",
-              height: "50px",
-              backgroundColor: "white",
-            }}
-          ></div>
+          ) : null}
         </Grid>
       </Grid>
     </nav>

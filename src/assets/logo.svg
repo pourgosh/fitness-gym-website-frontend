@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.48 346.48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #121212;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 11px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Lato-Black, Lato;
+        font-size: 175px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-1" x="56.24" y="56.24" width="234" height="234" transform="translate(-71.76 173.24) rotate(-45)"/>
+    <text class="cls-2" transform="translate(89.74 238.47)"><tspan x="0" y="0">M</tspan></text>
+  </g>
+</svg>
