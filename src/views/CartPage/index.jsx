@@ -1,26 +1,17 @@
-import { Box, Grid, Typography } from "@mui/material";
-import myImg from "../../assets/Images/cartBg.jpg";
+import { Grid } from "@mui/material";
+
 import CartForm from "../../components/cartForm";
+import CartHeader from "../../components/cartHeader";
 
 const CartPage = () => {
   return (
     <main>
-      <Box
-        pt={{ xs: 11, lg: 15, xxxl: 17 }}
-        display={"flex"}
+      <Grid
+        container
         justifyContent={"center"}
+        pt={{ xs: 11, lg: 15, xxxl: 17 }}
       >
-        <Typography
-          variant="h1"
-          color={"primary.main"}
-          sx={{
-            width: "90%",
-          }}
-        >
-          Place Your Order
-        </Typography>
-      </Box>
-      <Grid container justifyContent={"center"}>
+        <CartHeader />
         <Grid
           container
           item
@@ -31,23 +22,7 @@ const CartPage = () => {
             border: { xs: "2px solid #D9D9D9", between: "none" },
           }}
         >
-          <Grid
-            item
-            flex={1}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            pt={{ xs: 5 }}
-            sx={{
-              minHeight: { xs: "50dvh", md: "70dvh", lg: "80dvh" },
-              backgroundImage: `url(${myImg})`,
-              backgroundSize: { xs: "cover", between: "contain" },
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-            }}
-          >
-            <CartForm />
-          </Grid>
+          <CartForm />
         </Grid>
       </Grid>
     </main>
