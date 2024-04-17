@@ -8,7 +8,7 @@ const About = () => {
         container
         flexDirection={"column"}
         color={"primary.main"}
-        pt={{ xs: 1, md: 4 }}
+        pt={{ xs: 1, sm: 2, md: 4 }}
       >
         <Grid
           item
@@ -44,20 +44,25 @@ const About = () => {
           flex={5}
           display={"flex"}
           justifyContent={"center"}
-          alignItems={"flex-start"}
-          pt={{ xs: 0, sm: 2, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
+          alignItems={"center"}
+          pt={{ xs: 0, sm: 0, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
           sx={{
             overflow: "auto",
             overflowY: "auto",
             textOverflow: "ellipsis",
-            height: { xs: "100px", between: "150px", lg: "fit-content" },
+            height: {
+              xs: "100px",
+              between: "150px",
+              lg: "fit-content",
+            },
           }}
         >
           <Typography
             variant="string"
             align="left"
-            pr={{ sm: 5, md: 10, lg: 18, xxl: 20, xxxl: 85 }}
-            sx={{ height: { xs: "60%" } }}
+            pr={{ sm: 5, md: 10, lg: 18, xxl: 20, xxxl: 25 }}
+            mt={{ xxl: 10 }}
+            sx={{ height: { xs: "60%", xxl: "100%" } }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat
