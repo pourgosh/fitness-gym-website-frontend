@@ -1,0 +1,215 @@
+[
+  {
+    "_id": 1,
+    "title": "Whey Protein Isolate",
+    "description": "High-quality whey protein isolate for muscle building and recovery.",
+    "ingredients": ["Whey Protein Isolate", "Natural Flavors", "Sweeteners"],
+    "how_to_use": "Mix one scoop with water or milk. Consume post-workout or as needed.",
+    "price": 29.99,
+    "manufacturer": "Optimum Nutrition",
+    "allergens": ["Milk"],
+    "image": "https://i.pinimg.com/236x/6f/cc/f4/6fccf4ec08dd0a30975d635e38fc4f3e.jpg"
+  },
+  {
+    "_id": 2,
+    "title": "Plant-Based Protein Powder",
+    "description": "Vegan-friendly protein powder made from a blend of pea, rice, and hemp proteins.",
+    "ingredients": [
+      "Pea Protein",
+      "Rice Protein",
+      "Hemp Protein",
+      "Natural Flavors"
+    ],
+    "how_to_use": "Blend one scoop with your favorite smoothie or beverage. Enjoy anytime.",
+    "price": 24.99,
+    "manufacturer": "Garden of Life",
+    "allergens": ["None"],
+    "image": "https://i.pinimg.com/236x/bd/ba/e9/bdbae9ea425387f80e7b7c9d540799cf.jpg"
+  },
+  {
+    "_id": 3,
+    "title": "Casein Protein",
+    "description": "Slow-digesting protein ideal for nighttime muscle recovery.",
+    "ingredients": ["Micellar Casein", "Natural Flavors", "Sweeteners"],
+    "how_to_use": "Mix one scoop with water or milk before bedtime.",
+    "price": 34.99,
+    "manufacturer": "MuscleTech",
+    "allergens": ["Milk"],
+    "image": "https://i.pinimg.com/236x/75/ab/ec/75abecc5b65312485e8f35d35f0d3699.jpg"
+  },
+  {
+    "_id": 4,
+    "title": "Mass Gainer",
+    "description": "High-calorie protein powder for gaining lean mass.",
+    "ingredients": [
+      "Whey Protein Concentrate",
+      "Maltodextrin",
+      "Creatine Monohydrate"
+    ],
+    "how_to_use": "Blend two scoops with milk or water. Consume between meals.",
+    "price": 49.99,
+    "manufacturer": "Dymatize",
+    "allergens": ["Milk", "Soy"],
+    "image": "https://i.pinimg.com/236x/44/14/6f/44146f13bf4283ebf4c649d356b809a9.jpg"
+  },
+  {
+    "_id": 5,
+    "title": "Hydrolyzed Whey Protein",
+    "description": "Fast-absorbing whey protein hydrolysate for rapid recovery.",
+    "ingredients": ["Hydrolyzed Whey Protein", "Natural Flavors", "Sweeteners"],
+    "how_to_use": "Mix one scoop with water or beverage of choice immediately after workouts.",
+    "price": 39.99,
+    "manufacturer": "BSN",
+    "allergens": ["Milk", "Soy"],
+    "image": "https://m.media-amazon.com/images/I/71-EIei51tL.__AC_SX300_SY300_QL70_ML2_.jpg"
+  },
+  {
+    "_id": 6,
+    "title": "Egg White Protein",
+    "description": "Paleo-friendly protein powder made from egg whites.",
+    "ingredients": ["Egg White Protein", "Natural Flavors"],
+    "how_to_use": "Blend one scoop with water or beverage. Suitable for baking.",
+    "price": 27.99,
+    "manufacturer": "NOW Sports",
+    "allergens": ["Egg"],
+    "image": "https://m.media-amazon.com/images/I/61ym4xhXZHL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 7,
+    "title": "Soy Protein Isolate",
+    "description": "Plant-based protein powder made from non-GMO soybeans.",
+    "ingredients": ["Soy Protein Isolate", "Natural Flavors", "Sweeteners"],
+    "how_to_use": "Mix one scoop with water or your favorite beverage. Ideal for vegetarians.",
+    "price": 21.99,
+    "manufacturer": "Bob's Red Mill",
+    "allergens": ["Soy"],
+    "image": "https://m.media-amazon.com/images/I/61FR9kWMkGL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 8,
+    "title": "Collagen Peptides",
+    "description": "Supports skin, hair, and joint health with collagen peptides.",
+    "ingredients": ["Collagen Peptides", "Natural Flavors"],
+    "how_to_use": "Dissolve one scoop in hot or cold liquid. Enjoy daily.",
+    "price": 19.99,
+    "manufacturer": "Vital Proteins",
+    "allergens": ["None"],
+    "image": "https://m.media-amazon.com/images/I/81EV3V21i3L._AC_UL320_.jpg"
+  },
+  {
+    "_id": 9,
+    "title": "Keto Protein Powder",
+    "description": "Low-carb protein powder formulated for ketogenic diets.",
+    "ingredients": ["Whey Protein Isolate", "Coconut Oil Powder", "MCT Oil"],
+    "how_to_use": "Mix one scoop with water, almond milk, or coffee. Perfect for keto shakes.",
+    "price": 32.99,
+    "manufacturer": "Kiss My Keto",
+    "allergens": ["Milk", "Tree Nuts (Coconut)"],
+    "image": "https://m.media-amazon.com/images/I/61aDwJIJJ9L._AC_UL320_.jpg"
+  },
+  {
+    "_id": 10,
+    "title": "Beef Protein Isolate",
+    "description": "Protein powder sourced from beef for muscle support.",
+    "ingredients": ["Beef Protein Isolate", "Natural Flavors", "Sweeteners"],
+    "how_to_use": "Blend one scoop with water or milk. Suitable for Paleo diets.",
+    "price": 37.99,
+    "manufacturer": "MHP",
+    "allergens": ["None"],
+    "image": "https://m.media-amazon.com/images/I/51CFvAoA3zL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 11,
+    "title": "Multi-Source Protein Blend",
+    "description": "Combination of whey, casein, and egg proteins for sustained amino acid release.",
+    "ingredients": [
+      "Whey Protein Concentrate",
+      "Casein Protein",
+      "Egg White Protein"
+    ],
+    "how_to_use": "Mix one scoop with your beverage of choice. Ideal for anytime use.",
+    "price": 26.99,
+    "manufacturer": "MusclePharm",
+    "allergens": ["Milk", "Egg"],
+    "image": "https://m.media-amazon.com/images/I/510rOclMHRL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 12,
+    "title": "Pea Protein Powder",
+    "description": "Pure pea protein powder for plant-based muscle support.",
+    "ingredients": ["Pea Protein Isolate", "Natural Flavors", "Sweeteners"],
+    "how_to_use": "Blend one scoop with water or plant-based milk. Perfect for vegans.",
+    "price": 22.99,
+    "manufacturer": "Naked Nutrition",
+    "allergens": ["None"],
+    "image": "https://m.media-amazon.com/images/I/61ihOoNP05L._AC_UL320_.jpg"
+  },
+  {
+    "_id": 13,
+    "title": "Brown Rice Protein",
+    "description": "Hypoallergenic protein powder derived from sprouted brown rice.",
+    "ingredients": ["Brown Rice Protein Concentrate", "Natural Flavors"],
+    "how_to_use": "Mix one scoop with water or your favorite beverage. Suitable for sensitive stomachs.",
+    "price": 25.99,
+    "manufacturer": "Sunwarrior",
+    "allergens": ["None"],
+    "image": "https://m.media-amazon.com/images/I/61FLm9Lw2gL.__AC_SX300_SY300_QL70_ML2_.jpg"
+  },
+  {
+    "_id": 14,
+    "title": "Hemp Protein Powder",
+    "description": "Organic hemp protein powder rich in omega fatty acids.",
+    "ingredients": ["Hemp Protein Powder", "Natural Flavors"],
+    "how_to_use": "Blend one scoop with water, juice, or smoothies. Perfect for plant-based diets.",
+    "price": 28.99,
+    "manufacturer": "Manitoba Harvest",
+    "allergens": ["None"],
+    "image": "https://m.media-amazon.com/images/I/71xT2GwxmFL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 15,
+    "title": "Algal Protein Powder",
+    "description": "Sustainable pre workout powder sourced from top ingredients.",
+    "ingredients": [
+      "L-citrulline malate (2:1)",
+      " L-arginine alpha-ketoglutarate (2:1)",
+      "aroma, glycerol powder (65% glycerine, release agent (silicon dioxide)) (GLYCOPUMP®)",
+      "amaranth extract (OXYSTORM®)",
+      "sodium citrate",
+      "maltodextrin",
+      "potassium citrate",
+      "calcium citrate"
+    ],
+    "how_to_use": "Mix one scoop with water or your favorite beverage. Environmentally friendly.",
+    "price": 39.99,
+    "manufacturer": "Esn",
+    "allergens": ["None"],
+    "image": "https://m.media-amazon.com/images/I/51zKclRspWL._SX522_.jpg"
+  },
+  {
+    "_id": 16,
+    "title": "Rice and Pea Protein Blend",
+    "description": "Combination of rice and pea proteins for balanced amino acid profile.",
+    "ingredients": [
+      "Rice Protein Concentrate",
+      "Pea Protein Isolate",
+      "Natural Flavors"
+    ],
+    "how_to_use": "Blend one scoop with your preferred liquid. Great for post-workout recovery.",
+    "price": 23.99,
+    "manufacturer": "Orgain",
+    "allergens": ["None"],
+    "image": "https://m.media-amazon.com/images/I/512WV9nuIQL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 17,
+    "title": "Spirulina Protein Powder",
+    "description": "Protein-rich powder made from nutrient-dense spirulina algae.",
+    "ingredients": ["Spirulina", "Natural Flavors"],
+    "how_to_use": "Mix one scoop with water, juice, or smoothies. Energizing and nutritious.",
+    "price": 31.99,
+    "manufacturer": "Earthrise",
+    "allergens": ["None"],
+    "image": "spirulina_protein_powder.jpg"
+  }
+]
