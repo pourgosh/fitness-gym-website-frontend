@@ -1,5 +1,13 @@
+import SupplementsMiddle from "../../components/supplements/supplementsMiddle";
+import SupplementsTop from "../../components/supplements/supplementsTop";
+
 const SupplementsPage = () => {
-  return <div>SupplementsPage</div>;
+  return (
+    <main>
+      <SupplementsTop />
+      <SupplementsMiddle />
+    </main>
+  );
 };
 
 export default SupplementsPage;
