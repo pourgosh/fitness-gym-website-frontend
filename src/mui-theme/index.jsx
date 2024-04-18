@@ -20,6 +20,7 @@ export const theme = createTheme({
       xl: 1400,
       xxl: 1500,
       xxxl: 2000,
+      xxxxl: 2500,
     },
   },
   typography: {

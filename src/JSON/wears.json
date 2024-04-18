@@ -1,0 +1,90 @@
+[
+  {
+    "_id": 1,
+    "title": "Men's Running Shoes",
+    "description": "Lightweight and durable running shoes for men.",
+    "price": 79.99,
+    "manufacturer": "Runner's World",
+    "image": "https://m.media-amazon.com/images/I/718pCeauTlL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 2,
+    "title": "Women's Yoga Pants",
+    "description": "Stretchable and breathable yoga pants for women.",
+    "price": 29.99,
+    "manufacturer": "ABC Sportswear",
+    "image": "https://m.media-amazon.com/images/I/41l1a5t8jvL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 3,
+    "title": "Men's Compression Shirt",
+    "description": "Moisture-wicking compression shirt for men.",
+    "price": 34.99,
+    "manufacturer": "Performance Gear",
+    "image": "https://m.media-amazon.com/images/I/51svTfw9M4L._AC_UL320_.jpg"
+  },
+  {
+    "_id": 4,
+    "title": "Women's Sports Bra",
+    "description": "Supportive sports bra for women during workouts.",
+    "price": 24.99,
+    "manufacturer": "Athletic Wear Co.",
+    "image": "https://m.media-amazon.com/images/I/71hhC8wT54L._AC_UL320_.jpg"
+  },
+  {
+    "_id": 5,
+    "title": "Men's Basketball Shorts",
+    "description": "Breathable basketball shorts for men.",
+    "price": 39.99,
+    "manufacturer": "Hoops Gear",
+    "image": "https://m.media-amazon.com/images/I/619yskEA7gL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 6,
+    "title": "Women's Running Jacket",
+    "description": "Weather-resistant running jacket for women.",
+    "price": 59.99,
+    "manufacturer": "Runners' Choice",
+    "image": "https://m.media-amazon.com/images/I/51jls649dPL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 7,
+    "title": "Men's Gym Tank Top",
+    "description": "Sleeveless tank top for men, perfect for gym workouts.",
+    "price": 19.99,
+    "manufacturer": "FitStyle Apparel",
+    "image": "https://m.media-amazon.com/images/I/61ncdHNsFFS._AC_UL320_.jpg"
+  },
+  {
+    "_id": 8,
+    "title": "Women's Cycling Shorts",
+    "description": "Padded cycling shorts for women for comfortable rides.",
+    "price": 49.99,
+    "manufacturer": "Cycle Pro",
+    "image": "https://m.media-amazon.com/images/I/51Ye-z3Gw7L._AC_UL320_.jpg"
+  },
+  {
+    "_id": 9,
+    "title": "Men's Soccer Jersey",
+    "description": "Durable soccer jersey for men, suitable for training or matches.",
+    "price": 44.99,
+    "manufacturer": "Soccer Gear Inc.",
+    "image": "https://m.media-amazon.com/images/I/51cOzA1S8TL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 10,
+    "title": "Women's Tennis Skirt",
+    "description": "Stylish and functional tennis skirt for women.",
+    "price": 34.99,
+    "manufacturer": "Tennis Pro",
+    "image": "https://m.media-amazon.com/images/I/61YTixL2haL._AC_UL320_.jpg"
+  },
+  {
+    "_id": 11,
+    "title": "Ventilated Fitness Gloves",
+    "description": "Stylish and functional gloves for protection and comfort.",
+    "price": 14.99,
+    "manufacturer": "Fitness Pro",
+    "image": "https://m.media-amazon.com/images/I/61YTixL2haL._AC_UL320_.jpg"
+  }
+]

@@ -16,13 +16,17 @@ const Benefits = () => {
       >
         <BenefitsHeader />
         <Grid container item>
-          <Grid item display={"flex"} flex={4}>
+          <Grid
+            item
+            display={"flex"}
+            justifyContent={{ md: "center", xxl: "space-evenly" }}
+            flex={4}
+          >
             <List
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: { between: "center" },
-
+                justifyContent: { sm: "center", between: "center" },
                 ml: { between: 2, lg: 10, xxl: 16, xxxl: 25 },
               }}
             >
@@ -36,14 +40,17 @@ const Benefits = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: { between: "center" },
+                justifyContent: {
+                  sm: "center",
+                  between: "center",
+                },
               }}
             >
               <BenfitsList label={"Worldwide Club Access"} />
 
               <BenfitsList label={"Health-Plan discounts"} />
 
-              <BenfitsList label={"Welness Program"} />
+              <BenfitsList label={"Wellness Program"} />
 
               <BenfitsList label={"Massive Community"} />
             </List>
@@ -51,7 +58,7 @@ const Benefits = () => {
           <Grid
             item
             display={"flex"}
-            justifyContent={"center"}
+            justifyContent={{ xs: "center", md: "flex-start" }}
             flex={3}
             pt={{ xs: 0, sm: 4, lg: 5, xl: 6, xxxl: 7 }}
           >
