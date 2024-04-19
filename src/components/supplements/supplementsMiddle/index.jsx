@@ -1,6 +1,8 @@
-import { Box, Grid, Typography } from "@mui/material";
-import { Fragment, useContext, useEffect } from "react";
+import { Grid } from "@mui/material";
+import { useContext, useEffect } from "react";
 import { productsContext } from "../../../App";
+import RightSection from "./rightSection";
+import LeftSection from "./leftSection";
 
 const SupplementsMiddle = () => {
   const products = useContext(productsContext);
@@ -8,8 +10,33 @@ const SupplementsMiddle = () => {
     products.getSupplementData();
   });
   return (
-    <section style={{ paddingTop: "16px" }}>
+    <section style={{ paddingTop: "30px" }}>
       <Grid
+        container
+        display={"flex"}
+        gap={"1px"}
+        px={{ lg: 10, xl: 20, xxl: 40, xxxl: 65 }}
+      >
+        <Grid
+          item
+          flex={1}
+          display={"grid"}
+          gap={"1px"}
+          gridTemplateColumns={"repeat(2,1fr)"}
+        >
+          <LeftSection supplements={products && products.supplements} />
+        </Grid>
+        <Grid item flex={1} display={"flex"}>
+          <RightSection supplements={products && products.supplements} />
+        </Grid>
+      </Grid>
+    </section>
+  );
+};
+
+export default SupplementsMiddle;
+
+/*<Grid
         container
         pl={{ xs: 1, md: 10, xl: 20, xxl: 50 }}
         pr={{ xs: 1, md: 10, xl: 20, xxl: 50 }}
@@ -103,9 +130,4 @@ const SupplementsMiddle = () => {
                 })}
           </Grid>
         </Grid>
-      </Grid>
-    </section>
-  );
-};
-
-export default SupplementsMiddle;
+      </Grid> */
