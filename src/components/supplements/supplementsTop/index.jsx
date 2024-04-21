@@ -19,8 +19,7 @@ const SupplementsTop = () => {
       <Grid
         container
         pt={{ xs: 2 }}
-        pr={{ xs: 1, md: 10, xl: 20, xxl: 50 }}
-        pl={{ xs: 1, md: 10, xl: 20, xxl: 50 }}
+        px={{ xs: 1, md: 10, xl: 20, xxl: 50 }}
         gap={{ xs: 1, lg: 2, xxl: 3 }}
       >
         {products.supplements &&
@@ -45,7 +44,6 @@ const SupplementsTop = () => {
                     style={{
                       height: "auto",
                       width: "100%",
-                      justifySelf: "flex-start",
                     }}
                   />
                   <Box
@@ -57,7 +55,6 @@ const SupplementsTop = () => {
                         lg: "45px",
                         xxl: "60px",
                       },
-                      justifySelf: "flex-end",
                       marginTop: "10px",
                       display: "flex",
                       justifyContent: "center",
