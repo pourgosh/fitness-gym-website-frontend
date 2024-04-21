@@ -1,13 +1,9 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { productsContext } from "../../../App";
 
 const SupplementsTop = () => {
   const products = useContext(productsContext);
-
-  useEffect(() => {
-    products.getSupplementData();
-  }, []);
 
   return (
     <section>
@@ -46,6 +42,7 @@ const SupplementsTop = () => {
                   <img
                     src={elem.image}
                     style={{
+                      border: "2px solid white",
                       height: "auto",
                       width: "100%",
                       justifySelf: "flex-start",

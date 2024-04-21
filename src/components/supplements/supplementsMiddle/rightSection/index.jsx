@@ -13,6 +13,7 @@ const RightSection = ({ supplements }) => {
             display={"flex"}
             flexDirection={"column"}
             alignItems={"center"}
+            px={1}
           >
             <img
               src={elem.image}
@@ -20,6 +21,7 @@ const RightSection = ({ supplements }) => {
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
+                border: "2px solid white",
               }}
             />
             <Button
