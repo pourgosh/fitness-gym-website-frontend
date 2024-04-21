@@ -38,11 +38,11 @@ const SupplementsTop = () => {
                   alignItems={"center"}
                   flexDirection={"column"}
                   flex={1}
+                  border="2px solid white"
                 >
                   <img
                     src={elem.image}
                     style={{
-                      border: "2px solid white",
                       height: "auto",
                       width: "100%",
                       justifySelf: "flex-start",
