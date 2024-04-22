@@ -8,7 +8,7 @@ const SupplementsPage = () => {
   const products = useContext(productsContext);
   useEffect(() => {
     products.getSupplementData();
-  });
+  }, [products]);
   return (
     <main>
       <SupplementsTop />
