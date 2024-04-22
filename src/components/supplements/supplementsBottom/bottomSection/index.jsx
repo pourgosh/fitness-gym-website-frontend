@@ -17,7 +17,7 @@ const BottomSection = ({ supplements }) => {
               display={"flex"}
               justifyContent={"center"}
               position={"relative"}
-              sx={{ background: "red" }}
+              sx={{ height: { xl: "500px" }, backgroundColor: "white" }}
               gridColumn={2}
             >
               <img
@@ -26,7 +26,7 @@ const BottomSection = ({ supplements }) => {
                   border: "2px solid white",
                   width: "100%",
                   height: "auto%",
-                  objectFit: "cover",
+                  objectFit: "contain",
                 }}
               />
               <Button

@@ -26,7 +26,7 @@ const LeftSection = ({ supplements }) => {
               }}
             />
             <Button
-              variant="outlined"
+              variant="contained"
               fullWidth={true}
               sx={{
                 position: "absolute",

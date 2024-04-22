@@ -16,13 +16,14 @@ const TopSection = ({ supplements }) => {
               display={"flex"}
               justifyContent={"center"}
               position={"relative"}
+              sx={{ height: { xl: "500px" }, backgroundColor: "white" }}
             >
               <img
                 src={elem.image}
                 style={{
                   width: "100%",
                   height: "auto",
-                  objectFit: "cover",
+                  objectFit: "contain",
                   border: "2px solid white",
                 }}
               />
