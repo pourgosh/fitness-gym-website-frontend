@@ -19,7 +19,7 @@ const LeftSection = ({ wears }) => {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover",
+                objectFit: "contain",
                 border: "2px solid white",
               }}
             />

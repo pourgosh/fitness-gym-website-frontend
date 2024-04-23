@@ -15,7 +15,7 @@ const WearsMid = () => {
         gap={"1px"}
         px={{ lg: 10, xl: 20, xxl: 40, xxxl: 50 }}
       >
-        <Grid item flex={1} display={"flex"} sx={{ background: "red" }}>
+        <Grid item flex={1} display={"flex"} sx={{ background: "white" }}>
           <LeftSection wears={products && products.wears} />
         </Grid>
         <Grid
