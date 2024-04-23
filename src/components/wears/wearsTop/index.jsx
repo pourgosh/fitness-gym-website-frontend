@@ -4,6 +4,7 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 
 const WearsTop = () => {
   const products = useContext(productsContext);
+
   return (
     <section>
       <Box
@@ -62,6 +63,9 @@ const WearsTop = () => {
                         lg: "0.8rem",
                         xxl: "1rem",
                       },
+                    }}
+                    onClick={() => {
+                      products.navigateToSingleWear(elem._id);
                     }}
                   >
                     {elem.title}
