@@ -16,8 +16,14 @@ const WearsBottom = () => {
         pt={2}
         px={{ lg: 10, xl: 20, xxl: 40, xxxl: 50 }}
       >
-        <TopSection wears={products && products.wears} />
-        <BottomSection wears={products && products.wears} />
+        <TopSection
+          wears={products && products.wears}
+          navigate={products.navigateToSingleWear}
+        />
+        <BottomSection
+          wears={products && products.wears}
+          navigate={products.navigateToSingleWear}
+        />
       </Grid>
     </section>
   );

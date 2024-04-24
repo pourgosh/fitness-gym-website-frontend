@@ -1,6 +1,6 @@
 import { Box, Button } from "@mui/material";
 
-const LeftSection = ({ wears }) => {
+const LeftSection = ({ wears, navigate }) => {
   const singleElement = (wears) => {
     return (
       wears &&
@@ -37,6 +37,9 @@ const LeftSection = ({ wears }) => {
                   lg: "0.9rem",
                   xxl: "1.1rem",
                 },
+              }}
+              onClick={() => {
+                navigate(elem._id);
               }}
             >
               {elem.title}

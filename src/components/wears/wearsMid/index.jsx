@@ -6,6 +6,7 @@ import RightSection from "./rightSection";
 
 const WearsMid = () => {
   const products = useContext(productsContext);
+  console.log(products);
 
   return (
     <section style={{ paddingTop: "30px" }}>
@@ -16,7 +17,10 @@ const WearsMid = () => {
         px={{ lg: 10, xl: 20, xxl: 40, xxxl: 50 }}
       >
         <Grid item flex={1} display={"flex"} sx={{ background: "white" }}>
-          <LeftSection wears={products && products.wears} />
+          <LeftSection
+            wears={products && products.wears}
+            navigate={products.navigateToSingleWear}
+          />
         </Grid>
         <Grid
           item
@@ -26,7 +30,10 @@ const WearsMid = () => {
           gridTemplateColumns={"repeat(2,1fr)"}
           pl={1}
         >
-          <RightSection wears={products && products.wears} />
+          <RightSection
+            wears={products && products.wears}
+            navigate={products.navigateToSingleWear}
+          />
         </Grid>
       </Grid>
     </section>

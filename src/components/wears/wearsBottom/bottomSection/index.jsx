@@ -1,6 +1,6 @@
 import { Button, Grid } from "@mui/material";
 
-const BottomSection = ({ wears }) => {
+const BottomSection = ({ wears, navigate }) => {
   const displayItem = (wears) => {
     return (
       wears &&
@@ -43,6 +43,9 @@ const BottomSection = ({ wears }) => {
                     lg: "0.9rem",
                     xxl: "1.1rem",
                   },
+                }}
+                onClick={() => {
+                  navigate(elem._id);
                 }}
               >
                 {elem.title}
