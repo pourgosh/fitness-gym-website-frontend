@@ -6,6 +6,7 @@ import { productsContext } from "../../App";
 
 const SupplementsPage = () => {
   const products = useContext(productsContext);
+
   useEffect(() => {
     products.getSupplementData();
   }, [products]);

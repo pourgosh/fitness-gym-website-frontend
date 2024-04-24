@@ -12,6 +12,9 @@ const SingleSupplementsPage = () => {
   const numID = parseInt(supplementID);
   const [suppDirection, setSuppDirection] = useState(false);
   const [suppDescription, setSuppDescription] = useState(false);
+  const [alergens, setAlergens] = useState(false);
+  const [ingredients, setIngredients] = useState(false);
+  const [manufacturer, setManufacturer] = useState(false);
 
   useEffect(() => {
     product.getSupplementData();
@@ -70,6 +73,12 @@ const SingleSupplementsPage = () => {
             suppDescription={suppDescription}
             supplements={product.supplements && product.supplements}
             numID={numID}
+            alergens={alergens}
+            ingredients={ingredients}
+            setAlergens={setAlergens}
+            setIngredients={setIngredients}
+            manufacturer={manufacturer}
+            setManufacturer={setManufacturer}
           />
         </Grid>
       </Grid>
