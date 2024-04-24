@@ -6,7 +6,6 @@ import RightSection from "./rightSection";
 
 const WearsMid = () => {
   const products = useContext(productsContext);
-  console.log(products);
 
   return (
     <section style={{ paddingTop: "30px" }}>

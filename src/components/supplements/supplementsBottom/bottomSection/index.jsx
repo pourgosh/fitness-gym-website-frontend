@@ -2,7 +2,6 @@ import { Button, Grid } from "@mui/material";
 
 const BottomSection = ({ supplements }) => {
   const displayItem = (supplements) => {
-    console.log(supplements);
     return (
       supplements &&
       supplements
