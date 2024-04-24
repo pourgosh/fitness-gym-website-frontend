@@ -46,6 +46,7 @@ const DropDownInfo = ({
                 <Fragment key={elem._id}>
                   <Typography
                     variant="string"
+                    color={"primary.main"}
                     sx={{ borderTop: "1px solid white", pt: 2 }}
                   >
                     {elem.manufacturer}
@@ -61,6 +62,7 @@ const DropDownInfo = ({
               return (
                 <Fragment key={elem._id}>
                   <Typography
+                    color={"primary.main"}
                     variant="string"
                     sx={{ borderTop: "1px solid white", pt: 2 }}
                   >
