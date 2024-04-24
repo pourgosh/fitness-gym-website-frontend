@@ -12,7 +12,6 @@ const SingleSupplementsPage = () => {
   const numID = parseInt(supplementID);
   const [suppDirection, setSuppDirection] = useState(false);
   const [suppDescription, setSuppDescription] = useState(false);
-  console.log(product);
 
   useEffect(() => {
     product.getSupplementData();

@@ -4,7 +4,6 @@ import { productsContext } from "../../../App";
 
 const SupplementsTop = () => {
   const products = useContext(productsContext);
-  console.log(products);
 
   return (
     <section>
