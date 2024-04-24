@@ -26,6 +26,10 @@ function App() {
     navigate(`/products/wears/${wearID}`);
   };
 
+  const navigateToSingleSupplement = (supplementID) => {
+    navigate(`/products/supplements/${supplementID}`);
+  };
+
   return (
     <>
       <productsContext.Provider
@@ -35,6 +39,7 @@ function App() {
           getWearsData,
           getSupplementData,
           navigateToSingleWear,
+          navigateToSingleSupplement,
         }}
       >
         <NavBar />

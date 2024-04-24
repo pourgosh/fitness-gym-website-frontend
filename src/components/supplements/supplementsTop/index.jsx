@@ -4,6 +4,7 @@ import { productsContext } from "../../../App";
 
 const SupplementsTop = () => {
   const products = useContext(productsContext);
+  console.log(products);
 
   return (
     <section>
@@ -77,6 +78,9 @@ const SupplementsTop = () => {
                           lg: "0.8rem",
                           xxl: "1rem",
                         },
+                      }}
+                      onClick={() => {
+                        products.navigateToSingleSupplement(elem._id);
                       }}
                     >
                       {elem.title}

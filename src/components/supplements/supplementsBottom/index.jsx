@@ -17,8 +17,14 @@ const SupplementsBottom = () => {
         pt={2}
         px={{ lg: 10, xl: 20, xxl: 40, xxxl: 50 }}
       >
-        <TopSection supplements={products && products.supplements} />
-        <BottomSection supplements={products && products.supplements} />
+        <TopSection
+          supplements={products && products.supplements}
+          navigate={products.navigateToSingleSupplement}
+        />
+        <BottomSection
+          supplements={products && products.supplements}
+          navigate={products.navigateToSingleSupplement}
+        />
       </Grid>
     </section>
   );

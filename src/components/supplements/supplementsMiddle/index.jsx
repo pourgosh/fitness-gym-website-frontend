@@ -23,10 +23,16 @@ const SupplementsMiddle = () => {
           gridTemplateColumns={"repeat(2,1fr)"}
           pl={1}
         >
-          <LeftSection supplements={products && products.supplements} />
+          <LeftSection
+            supplements={products && products.supplements}
+            navigate={products.navigateToSingleSupplement}
+          />
         </Grid>
         <Grid item flex={1} display={"flex"}>
-          <RightSection supplements={products && products.supplements} />
+          <RightSection
+            supplements={products && products.supplements}
+            navigate={products.navigateToSingleSupplement}
+          />
         </Grid>
       </Grid>
     </section>

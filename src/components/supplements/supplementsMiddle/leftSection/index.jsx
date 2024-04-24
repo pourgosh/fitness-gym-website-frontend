@@ -1,6 +1,6 @@
 import { Box, Button } from "@mui/material";
 
-const LeftSection = ({ supplements }) => {
+const LeftSection = ({ supplements, navigate }) => {
   const displaySupplements = (supplements) => {
     return (
       supplements &&
@@ -40,6 +40,9 @@ const LeftSection = ({ supplements }) => {
                   lg: "0.9rem",
                   xxl: "1.1rem",
                 },
+              }}
+              onClick={() => {
+                navigate(elem._id);
               }}
             >
               {elem.title}
