@@ -1,10 +1,13 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, IconButton, Stack, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
 import { productsContext } from "../../../App";
 import { Fragment, useContext, useEffect, useState } from "react";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import LeftSectionTop from "./leftSection";
 import RightSectionTop from "./rightSection";
 import DropDownInfo from "./dropDownInfo";
+import RecommendedItems from "../../../components/recommendedItems";
 
 const SingleWearPage = () => {
   const { wearID } = useParams();
@@ -12,6 +15,8 @@ const SingleWearPage = () => {
   const numID = parseInt(wearID);
   const [manufactur, setManufacture] = useState(false);
   const [description, setDescription] = useState(false);
+  const [startItem, setStartItem] = useState(5);
+  const [endItem, setEndItem] = useState(9);
 
   useEffect(() => {
     product.getWearsData();
@@ -67,6 +72,62 @@ const SingleWearPage = () => {
           />
         </Grid>
       </Grid>
+      <Grid container justifyContent={"center"} pt={10}>
+        <Grid
+          item
+          display={"grid"}
+          gridTemplateColumns={"repeat(4,1fr)"}
+          justifyContent={"center"}
+          alignContent={"center"}
+          maxHeight={300}
+          gap={5}
+        >
+          <RecommendedItems
+            navigate={product.navigateToSingleWear}
+            items={product.wears}
+            startItem={startItem}
+            endItem={endItem}
+          />
+        </Grid>
+      </Grid>
+      <Stack
+        direction="row"
+        spacing={1}
+        display={"flex"}
+        justifyContent={"center"}
+        pt={3}
+      >
+        <IconButton
+          aria-label="previous-item"
+          sx={{ color: "white" }}
+          onClick={() => {
+            if (startItem <= 0) {
+              setEndItem(4);
+              setStartItem(0);
+            } else {
+              setEndItem(endItem - 1);
+              setStartItem(startItem - 1);
+            }
+          }}
+        >
+          <ArrowBackIosIcon />
+        </IconButton>
+        <IconButton
+          aria-label="next-item"
+          sx={{ color: "white" }}
+          onClick={() => {
+            if (endItem >= product.wears.length - 1) {
+              setEndItem(product.wears.length - 1);
+              setStartItem(product.wears.length - 5);
+            } else {
+              setEndItem(endItem + 1);
+              setStartItem(startItem + 1);
+            }
+          }}
+        >
+          <ArrowForwardIosIcon />
+        </IconButton>
+      </Stack>
     </main>
   );
 };
