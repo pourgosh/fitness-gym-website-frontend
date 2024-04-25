@@ -1,6 +1,6 @@
 import { Grid, Button } from "@mui/material";
 
-const ProductItem = ({ img, text = "Wears", alt = "Wears Image" }) => {
+const ProductItem = ({ img, text = "Wears", alt = "Wears Image", onClick }) => {
   return (
     <Grid
       item
@@ -23,6 +23,7 @@ const ProductItem = ({ img, text = "Wears", alt = "Wears Image" }) => {
           bottom: 0,
           width: { xs: "100%", lg: "30%" },
         }}
+        onClick={onClick}
       >
         {text}
       </Button>
