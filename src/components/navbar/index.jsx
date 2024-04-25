@@ -5,11 +5,11 @@ import NavLinks from "./navItems/NavLinks";
 import NavLogo from "./navItems/NavLogo";
 import burgerIcon from "/burger-menu-svgrepo-com.svg";
 import mutentIcon from "../../assets/logo.svg";
-
-import "./navbar.css";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [navItems, setNavItems] = useState(false);
+  const navigate = useNavigate();
 
   const displayNav = () => {
     setNavItems(!navItems);
@@ -55,7 +55,11 @@ const NavBar = () => {
           <NavLinks label="Contact" />
           <NavLinks label="About" />
           <NavLinks label="Cart" />
-          <NavLinks />
+          <NavLinks
+            onClick={() => {
+              navigate("/");
+            }}
+          />
         </Grid>
         <Grid container item flexDirection={"column"} alignItems={"center"}>
           {navItems ? (
@@ -64,7 +68,11 @@ const NavBar = () => {
               <NavLinks label="Contact" />
               <NavLinks label="About" />
               <NavLinks label="Cart" />
-              <NavLinks />
+              <NavLinks
+                onClick={() => {
+                  navigate("/");
+                }}
+              />
             </Grid>
           ) : null}
         </Grid>
