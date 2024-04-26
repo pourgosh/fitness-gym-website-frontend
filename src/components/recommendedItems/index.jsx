@@ -1,3 +1,5 @@
+import "./recommendedItems.css";
+
 const RecommendedItems = ({ items, startItem, endItem, navigate }) => {
   const carouselImages = () => {
     return (
@@ -8,13 +10,8 @@ const RecommendedItems = ({ items, startItem, endItem, navigate }) => {
               return (
                 <img
                   key={elem._id}
+                  className="carouselImages"
                   src={elem.image}
-                  style={{
-                    width: "160px",
-                    height: "250px",
-                    objectFit: "cover",
-                    border: "1px solid white",
-                  }}
                   onClick={() => {
                     navigate(elem._id);
                   }}

@@ -32,6 +32,9 @@ const NavBar = () => {
               src={mutentIcon}
               alt="company icon"
               style={{ width: "100%" }}
+              onClick={() => {
+                navigate("/");
+              }}
             />
           </div>
         </Grid>
@@ -54,7 +57,13 @@ const NavBar = () => {
           <NavLinks label="Membership" />
           <NavLinks label="Contact" />
           <NavLinks label="About" />
-          <NavLinks label="Cart" />
+          <NavLinks
+            label="Cart"
+            onClick={() => {
+              navigate("/cart");
+            }}
+          />
+
           <NavLinks
             onClick={() => {
               navigate("/");
@@ -67,7 +76,12 @@ const NavBar = () => {
               <NavLinks label="Membership" />
               <NavLinks label="Contact" />
               <NavLinks label="About" />
-              <NavLinks label="Cart" />
+              <NavLinks
+                label="Cart"
+                onClick={() => {
+                  navigate("/cart");
+                }}
+              />
               <NavLinks
                 onClick={() => {
                   navigate("/");

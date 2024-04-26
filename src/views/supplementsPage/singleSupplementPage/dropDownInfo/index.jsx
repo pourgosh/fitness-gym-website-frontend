@@ -31,6 +31,7 @@ const DropDownInfo = ({
           sx={{
             display: "flex",
             flexDirection: "column",
+            fontSize: { xs: "10px", md: "12px", xxl: "15px" },
           }}
         >
           Direction
@@ -45,7 +46,11 @@ const DropDownInfo = ({
             setIngredients(!ingredients);
             setManufacturer(false);
           }}
-          sx={{ display: "flex", flexDirection: "column" }}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            fontSize: { xs: "10px", md: "12px", xxl: "15px" },
+          }}
         >
           Ingredients
           <KeyboardArrowDownIcon />
@@ -62,6 +67,7 @@ const DropDownInfo = ({
           sx={{
             display: "flex",
             flexDirection: "column",
+            fontSize: { xs: "10px", md: "12px", xxl: "15px" },
           }}
         >
           Direction
@@ -79,6 +85,7 @@ const DropDownInfo = ({
           sx={{
             display: "flex",
             flexDirection: "column",
+            fontSize: { xs: "10px", md: "12px", xxl: "15px" },
           }}
         >
           Alergens
@@ -96,6 +103,7 @@ const DropDownInfo = ({
           sx={{
             display: "flex",
             flexDirection: "column",
+            fontSize: { xs: "10px", md: "12px", xxl: "15px" },
           }}
         >
           Manufacturer
@@ -106,9 +114,9 @@ const DropDownInfo = ({
           supplements.map((elem) => {
             if (elem._id === numID) {
               return (
-                <Fragment key={elem._id}>
+                <Fragment key={elem._id + 100}>
                   <Typography
-                    key={elem._id}
+                    key={elem._id + 200}
                     variant="string"
                     color={"primary.main"}
                     sx={{ borderTop: "1px solid white", padding: 1 }}
@@ -124,11 +132,11 @@ const DropDownInfo = ({
           supplements.map((elem) => {
             if (elem._id === numID) {
               return (
-                <Fragment key={elem._id}>
+                <Fragment key={elem._id + 101}>
                   {elem.allergens.map((elem) => {
                     return (
                       <Typography
-                        key={elem._title}
+                        key={elem._id + 201}
                         variant="string"
                         color={"primary.main"}
                         sx={{ borderTop: "1px solid white", padding: 1 }}
@@ -146,11 +154,11 @@ const DropDownInfo = ({
           supplements.map((elem) => {
             if (elem._id === numID) {
               return (
-                <Fragment key={elem._id}>
+                <Fragment key={elem._id + 102}>
                   {elem.ingredients.map((elem) => {
                     return (
                       <Typography
-                        key={elem._title}
+                        key={elem._id + 202}
                         variant="string"
                         color={"primary.main"}
                         sx={{ borderTop: "1px solid white", padding: 1 }}
@@ -168,7 +176,7 @@ const DropDownInfo = ({
           supplements.map((elem) => {
             if (elem._id === numID) {
               return (
-                <Fragment key={elem._id}>
+                <Fragment key={elem._id + 103}>
                   <Typography
                     variant="string"
                     color={"primary.main"}
@@ -185,7 +193,7 @@ const DropDownInfo = ({
           supplements.map((elem) => {
             if (elem._id === numID) {
               return (
-                <Fragment key={elem._id}>
+                <Fragment key={elem._id + 104}>
                   <Typography
                     variant="string"
                     color={"primary.main"}
