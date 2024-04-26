@@ -24,7 +24,6 @@ const LeftSectionTop = ({ supplements, numID, addItem }) => {
                   aria-label="Add to cart"
                   sx={{ color: "primary.main" }}
                   onClick={() => {
-                    console.log("i wanna rock!");
                     addItem(elem);
                   }}
                 >

@@ -1,12 +1,19 @@
 import { Box, Grid } from "@mui/material";
+import { useContext } from "react";
+import { productsContext } from "../../App";
 
 const CartItem = () => {
-  const testFunc = () => {
+  const product = useContext(productsContext);
+
+  const cartItem = (item) => {
     return (
       <Box
+        key={item._id * Math.floor(Math.random() * 100)}
         sx={{
           width: { xs: "80px", lg: "100px", xxl: "150px" },
           height: { xs: "80px", lg: "100px", xxl: "150px" },
+          background: `url(${item.image})`,
+          backgroundSize: "cover",
           backgroundColor: "primary.main",
         }}
       ></Box>
@@ -31,9 +38,11 @@ const CartItem = () => {
         zIndex: 100000000000000000000000000000000000000000n,
       }}
     >
-      {testFunc()}
-      {testFunc()}
-      {testFunc()}
+      {product.cart
+        ? product.cart.map((elem) => {
+            return cartItem(elem);
+          })
+        : null}
     </Grid>
   );
 };

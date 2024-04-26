@@ -24,7 +24,6 @@ const SingleSupplementsPage = () => {
   useEffect(() => {
     product.getSupplementData();
   }, [product]);
-  console.log(product);
   return (
     <main>
       <section>
