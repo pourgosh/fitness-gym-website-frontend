@@ -12,6 +12,7 @@ export const productsContext = createContext(null);
 function App() {
   const [supplements, setSupplements] = useState(null);
   const [wears, setWears] = useState(null);
+  const [cart, setCart] = useState([]);
   const navigate = useNavigate();
 
   const getSupplementData = () => {
@@ -30,12 +31,18 @@ function App() {
     navigate(`/products/supplements/${supplementID}`);
   };
 
+  const addToCart = (elem) => {
+    setCart([...cart, elem]);
+  };
   return (
     <>
       <productsContext.Provider
         value={{
+          cart,
           supplements,
           wears,
+          setCart,
+          addToCart,
           getWearsData,
           getSupplementData,
           navigateToSingleWear,

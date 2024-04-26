@@ -1,7 +1,7 @@
 import { IconButton, Stack } from "@mui/material";
 import { Fragment } from "react";
 import AddIcon from "@mui/icons-material/Add";
-const LeftSectionTop = ({ supplements, numID }) => {
+const LeftSectionTop = ({ supplements, numID, addItem }) => {
   const displayItem = (supplements) => {
     return (
       supplements &&
@@ -25,6 +25,7 @@ const LeftSectionTop = ({ supplements, numID }) => {
                   sx={{ color: "primary.main" }}
                   onClick={() => {
                     console.log("i wanna rock!");
+                    addItem(elem);
                   }}
                 >
                   <AddIcon
