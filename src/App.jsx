@@ -34,6 +34,15 @@ function App() {
   const addToCart = (elem) => {
     setCart([...cart, elem]);
   };
+
+  const removeFromCart = (item) => {
+    setCart(
+      cart.filter((elem) => {
+        return elem !== item;
+      })
+    );
+  };
+
   return (
     <>
       <productsContext.Provider
@@ -43,6 +52,7 @@ function App() {
           wears,
           setCart,
           addToCart,
+          removeFromCart,
           getWearsData,
           getSupplementData,
           navigateToSingleWear,
