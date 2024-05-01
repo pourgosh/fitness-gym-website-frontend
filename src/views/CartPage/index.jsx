@@ -5,7 +5,7 @@ import CartItem from "../../components/cartItem";
 import { useState } from "react";
 
 const CartPage = () => {
-  const [cartItems, setCartItems] = useState(false);
+  const [cartItems, setCartItems] = useState(true);
 
   const cartItemsDisplayer = () => {
     setCartItems(!cartItems);
