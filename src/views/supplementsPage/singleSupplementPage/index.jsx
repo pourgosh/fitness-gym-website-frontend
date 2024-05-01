@@ -24,7 +24,6 @@ const SingleSupplementsPage = () => {
   useEffect(() => {
     product.getSupplementData();
   }, [product]);
-
   return (
     <main>
       <section>
@@ -40,6 +39,7 @@ const SingleSupplementsPage = () => {
             <LeftSectionTop
               supplements={product && product.supplements}
               numID={numID}
+              addItem={product.addToCart}
             />
           </Grid>
           <Grid item container flex={1} flexDirection={"column"}>

@@ -21,7 +21,6 @@ const SingleWearPage = () => {
   useEffect(() => {
     product.getWearsData();
   }, [product]);
-
   return (
     <main>
       <Grid container pt={{ xs: 12, lg: 15, xl: 17, xxxl: 19 }}>
@@ -33,7 +32,11 @@ const SingleWearPage = () => {
           alignItems={"center"}
           flexDirection={"column"}
         >
-          <LeftSectionTop wears={product && product.wears} numID={numID} />
+          <LeftSectionTop
+            wears={product && product.wears}
+            numID={numID}
+            addItem={product.addToCart}
+          />
         </Grid>
         <Grid item container flex={1} flexDirection={"column"}>
           <RightSectionTop wears={product && product.wears} numID={numID} />

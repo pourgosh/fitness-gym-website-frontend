@@ -2,7 +2,7 @@ import { IconButton, Stack } from "@mui/material";
 import { Fragment } from "react";
 import AddIcon from "@mui/icons-material/Add";
 
-const LeftSectionTop = ({ wears, numID }) => {
+const LeftSectionTop = ({ wears, numID, addItem }) => {
   const displayItem = (wears) => {
     return (
       wears &&
@@ -25,7 +25,7 @@ const LeftSectionTop = ({ wears, numID }) => {
                   aria-label="Add to cart"
                   sx={{ color: "primary.main" }}
                   onClick={() => {
-                    console.log("i wanna rock!");
+                    addItem(elem);
                   }}
                 >
                   <AddIcon
