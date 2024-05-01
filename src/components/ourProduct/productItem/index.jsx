@@ -11,7 +11,7 @@ const ProductItem = ({ img, text = "Wears", alt = "Wears Image", onClick }) => {
       alignItems={"center"}
       flex={1}
     >
-      <img src={img} alt={alt} className={"productLink"} />
+      <img src={img} alt={alt} className={"productLink"} onClick={onClick} />
       <Button
         variant="contained"
         sx={{
