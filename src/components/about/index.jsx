@@ -3,7 +3,7 @@ import aboutImg from "../../assets/Images/aboutImg.jpg";
 import "./about.css";
 const About = () => {
   return (
-    <section>
+    <section id="aboutSection">
       <Grid
         container
         flexDirection={"column"}

@@ -6,7 +6,7 @@ import "./membershipForm.css";
 
 const MembershipForm = () => {
   return (
-    <section>
+    <section id="membershipSection">
       <Grid container pt={{ xs: 0, sm: 3, lg: 5, xl: 8, xxl: 12, xxxl: 10 }}>
         <Grid
           item

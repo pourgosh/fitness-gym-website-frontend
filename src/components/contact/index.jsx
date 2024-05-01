@@ -5,7 +5,7 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contactSection">
       <Grid
         container
         flexDirection={"column"}

@@ -14,6 +14,17 @@ const NavBar = () => {
   const displayNav = () => {
     setNavItems(!navItems);
   };
+
+  const scrollTo = async (section) => {
+    if (window.location.pathname !== "/") {
+      await navigate("/");
+      const sectionToScroll = document.querySelector(section);
+      sectionToScroll.scrollIntoView({ behavior: "smooth" });
+    }
+    const sectionToScroll = document.querySelector(section);
+    sectionToScroll.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <nav
       className="nav-ss"
@@ -54,9 +65,24 @@ const NavBar = () => {
           alignItems={"center"}
           pt={3}
         >
-          <NavLinks label="Membership" />
-          <NavLinks label="Contact" />
-          <NavLinks label="About" />
+          <NavLinks
+            label="Membership"
+            onClick={() => {
+              scrollTo("#membershipSection");
+            }}
+          />
+          <NavLinks
+            label="Contact"
+            onClick={() => {
+              scrollTo("#contactSection");
+            }}
+          />
+          <NavLinks
+            label="About"
+            onClick={() => {
+              scrollTo("#aboutSection");
+            }}
+          />
           <NavLinks
             label="Cart"
             onClick={() => {
@@ -73,9 +99,24 @@ const NavBar = () => {
         <Grid container item flexDirection={"column"} alignItems={"center"}>
           {navItems ? (
             <Grid item display={"flex"} flexDirection={"column"}>
-              <NavLinks label="Membership" />
-              <NavLinks label="Contact" />
-              <NavLinks label="About" />
+              <NavLinks
+                label="Membership"
+                onClick={() => {
+                  scrollTo("#membershipSection");
+                }}
+              />
+              <NavLinks
+                label="Contact"
+                onClick={() => {
+                  scrollTo("#contactSection");
+                }}
+              />
+              <NavLinks
+                label="About"
+                onClick={() => {
+                  scrollTo("#aboutSection");
+                }}
+              />
               <NavLinks
                 label="Cart"
                 onClick={() => {
