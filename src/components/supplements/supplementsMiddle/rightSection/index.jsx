@@ -23,6 +23,9 @@ const RightSection = ({ supplements, navigate }) => {
                 objectFit: "cover",
                 border: "2px solid white",
               }}
+              onClick={() => {
+                navigate(elem._id);
+              }}
             />
             <Button
               variant="contained"

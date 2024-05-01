@@ -27,6 +27,9 @@ const BottomSection = ({ supplements, navigate }) => {
                   height: "auto%",
                   objectFit: "contain",
                 }}
+                onClick={() => {
+                  navigate(elem._id);
+                }}
               />
               <Button
                 variant="contained"

@@ -45,6 +45,9 @@ const SupplementsTop = () => {
                       height: "auto",
                       width: "100%",
                     }}
+                    onClick={() => {
+                      products.navigateToSingleSupplement(elem._id);
+                    }}
                   />
                   <Box
                     sx={{

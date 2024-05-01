@@ -22,6 +22,9 @@ const LeftSection = ({ wears, navigate }) => {
                 objectFit: "contain",
                 border: "2px solid white",
               }}
+              onClick={() => {
+                navigate(elem._id);
+              }}
             />
             <Button
               variant="contained"

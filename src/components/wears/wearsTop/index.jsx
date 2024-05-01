@@ -46,6 +46,9 @@ const WearsTop = () => {
                       height: "100%",
                       objectFit: "cover",
                     }}
+                    onClick={() => {
+                      products.navigateToSingleWear(elem._id);
+                    }}
                   />
                   <Button
                     variant="text"
