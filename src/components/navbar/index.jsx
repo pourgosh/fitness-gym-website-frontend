@@ -66,6 +66,12 @@ const NavBar = () => {
           pt={3}
         >
           <NavLinks
+            label="Products"
+            onClick={() => {
+              scrollTo("#productsSection");
+            }}
+          />
+          <NavLinks
             label="Membership"
             onClick={() => {
               scrollTo("#membershipSection");
@@ -99,6 +105,12 @@ const NavBar = () => {
         <Grid container item flexDirection={"column"} alignItems={"center"}>
           {navItems ? (
             <Grid item display={"flex"} flexDirection={"column"}>
+              <NavLinks
+                label="Products"
+                onClick={() => {
+                  scrollTo("#productsSection");
+                }}
+              />
               <NavLinks
                 label="Membership"
                 onClick={() => {

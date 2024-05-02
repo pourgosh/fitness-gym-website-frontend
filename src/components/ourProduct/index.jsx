@@ -17,7 +17,7 @@ const OurProduct = () => {
   };
 
   return (
-    <section>
+    <section id="productsSection">
       <Grid
         container
         mt={{ xs: 4, sm: 5, md: 6, xl: 8, xxl: 12, xxxl: 10 }}
