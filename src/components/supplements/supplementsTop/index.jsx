@@ -41,6 +41,7 @@ const SupplementsTop = () => {
                 >
                   <img
                     src={elem.image}
+                    className="commonFilter"
                     style={{
                       height: "auto",
                       width: "100%",

@@ -17,6 +17,7 @@ const RightSection = ({ supplements, navigate }) => {
           >
             <img
               src={elem.image}
+              className="commonFilter"
               style={{
                 width: "100%",
                 height: "100%",

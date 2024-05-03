@@ -142,3 +142,7 @@ html {
   font-weight: 900;
   font-style: normal;
 }
+
+.commonFilter {
+  filter: contrast(90%) saturate(70%) brightness(70%);
+}

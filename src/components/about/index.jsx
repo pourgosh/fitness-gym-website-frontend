@@ -36,7 +36,11 @@ const About = () => {
       </Grid>
       <Grid container color={"primary.main"}>
         <Grid item flex={3} display={"flex"} justifyContent={"center"}>
-          <img className="aboutImg" src={aboutImg} aria-hidden="true" />
+          <img
+            className="aboutImg commonFilter"
+            src={aboutImg}
+            aria-hidden="true"
+          />
         </Grid>
         <Grid
           item
