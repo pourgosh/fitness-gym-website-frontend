@@ -28,32 +28,32 @@ export const theme = createTheme({
 
     h1: {
       fontFamily: "titleFont",
-      fontSize: "1rem",
-      fontWeight: 500,
+      fontSize: "1.3rem",
+      fontWeight: 800,
       "@media (min-width:500px)": {
-        fontSize: "1.4rem",
-        fontWeight: 700,
+        fontSize: "1.7rem",
+        fontWeight: 800,
       },
       "@media (min-width:1100px)": {
-        fontSize: "1.6rem",
-        fontWeight: 700,
+        fontSize: "2.8rem",
+        fontWeight: 800,
       },
       "@media (min-width:1900px)": {
-        fontSize: "2.5rem",
-        fontWeight: 700,
+        fontSize: "3.5rem",
+        fontWeight: 800,
       },
     },
     string: {
       fontFamily: "textFont",
-      fontSize: "0.8rem",
+      fontSize: "0.7rem",
       "@media (min-width:500px)": {
         fontSize: "1rem",
       },
       "@media (min-width:1100px)": {
-        fontSize: "1.4rem",
+        fontSize: "1.3rem",
       },
       "@media (min-width:1400px)": {
-        fontSize: "1.8rem",
+        fontSize: "1.6rem",
       },
     },
     list: {

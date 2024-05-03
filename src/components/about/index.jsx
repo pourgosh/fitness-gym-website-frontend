@@ -26,7 +26,6 @@ const About = () => {
           <Typography
             variant="h1"
             sx={{
-              marginTop: { xs: "15px", lg: "30px", xxl: "40px", xxxl: "50px" },
               marginLeft: { xs: "20px", xxl: "50px" },
               lineHeight: 1.5,
             }}
@@ -45,7 +44,7 @@ const About = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          pt={{ xs: 0, sm: 0, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
+          pt={{ md: 10, xl: 12, xxl: 13, xxxl: 14 }}
           sx={{
             overflow: "auto",
             overflowY: "auto",

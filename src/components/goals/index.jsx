@@ -29,7 +29,7 @@ const Goals = () => {
           alignItems={"center"}
           pl={1}
           pr={1}
-          gap={1}
+          gap={{ lg: 1.2 }}
         >
           <GoalsText text={titleP1} />
           <GoalsText text={titleP2} />

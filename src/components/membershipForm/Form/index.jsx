@@ -12,7 +12,7 @@ const MembersForm = () => {
         variant={"contained"}
         sx={{
           alignSelf: "center",
-          height: { xs: "30px" },
+          height: { xs: "20px", md: "25px", xl: "30px" },
           color: "black",
           textAlign: "center",
           textTransform: "none",

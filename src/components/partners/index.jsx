@@ -19,7 +19,7 @@ const Partners = () => {
       <Grid
         container
         justifyContent={{ xs: "space-around", lg: "space-evenly" }}
-        mt={{ xs: 0, sm: 2, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
+        mt={{ xs: 2, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
       >
         <PartnersItem img={amazonLogo} alt={"logo of amazon"} />
         <PartnersItem img={gorillaMindLogo} alt={"logo of gorilla-mind"} />

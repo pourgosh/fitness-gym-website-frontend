@@ -63,7 +63,7 @@ const NavBar = () => {
           display={{ xs: "none", lg: "flex" }}
           justifyContent={"center"}
           alignItems={"center"}
-          pt={3}
+          pt={1}
         >
           <NavLinks
             label="Products"
