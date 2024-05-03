@@ -55,7 +55,7 @@ const CartItem = () => {
         backgroundColor: "rgba(27, 26, 25, 85%)",
         overflow: "auto",
         overflowY: "auto",
-        zIndex: 100000000000000000000000000000000000000000n,
+        zIndex: 10n,
       }}
     >
       {product.cart.length ? (
