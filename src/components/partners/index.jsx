@@ -3,6 +3,7 @@ import PartnersItem from "./partnersItem";
 import amazonLogo from "../../assets/Images/sponsorLogos/Amazon_icon.svg-removebg-preview.png";
 import gorillaMindLogo from "../../assets/Images/sponsorLogos/1d2af5237dbd81fa8d422ffe4f53cc2a.w4000.h6076-removebg-preview.png";
 import telekomLogo from "../../assets/Images/sponsorLogos/dl-telekom-logo-01.jpg";
+import "./partners.css";
 
 const Partners = () => {
   return (

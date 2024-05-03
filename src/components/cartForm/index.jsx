@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import FormInput from "../FormInput";
 import cartBg from "../../assets/Images/cartBg.jpg";
+import "./cartForm.css";
 
 const CartForm = () => {
   return (
@@ -19,15 +20,7 @@ const CartForm = () => {
         backgroundPosition: "center",
       }}
     >
-      <form
-        style={{
-          backgroundColor: "rgba(27, 26, 25, 85%)",
-          display: "flex",
-          flexDirection: "column",
-          gap: 3,
-          padding: "30px",
-        }}
-      >
+      <form className="cartForm">
         <FormInput
           type={"text"}
           ariaLabel={"First Name"}

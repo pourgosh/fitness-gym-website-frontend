@@ -42,7 +42,6 @@ const NavBar = () => {
             <img
               src={mutentIcon}
               alt="company icon"
-              style={{ width: "100%" }}
               onClick={() => {
                 navigate("/");
               }}
