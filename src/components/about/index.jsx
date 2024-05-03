@@ -25,9 +25,10 @@ const About = () => {
           <Typography variant="list">Welcome To</Typography>
           <Typography
             variant="h1"
+            pt={{ xs: 1, xl: 2 }}
             sx={{
               marginLeft: { xs: "20px", xxl: "50px" },
-              lineHeight: 1.5,
+              lineHeight: 1.3,
             }}
           >
             Mutant Fitness
