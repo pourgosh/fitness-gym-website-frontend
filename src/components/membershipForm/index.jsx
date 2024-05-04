@@ -35,7 +35,7 @@ const MembershipForm = () => {
             flex={1}
             pl={1}
           >
-            <img className="memberFormBg" src={formBgTwo} />
+            <img className="memberFormBg commonFilter" src={formBgTwo} />
           </Grid>
           <Grid
             item
@@ -57,7 +57,7 @@ const MembershipForm = () => {
             <MembersForm />
           </Grid>
           <Grid item flex={1} pr={1}>
-            <img className="memberFormBg2" src={formBgOne} />
+            <img className="memberFormBg2 commonFilter" src={formBgOne} />
           </Grid>
         </Grid>
       </Grid>

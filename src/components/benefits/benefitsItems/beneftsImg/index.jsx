@@ -1,6 +1,10 @@
 const BenfitsImg = ({ studioImg }) => {
   return (
-    <img src={studioImg} alt="fitness studio image" className="benefitsImg" />
+    <img
+      src={studioImg}
+      alt="fitness studio image"
+      className="benefitsImg commonFilter"
+    />
   );
 };
 

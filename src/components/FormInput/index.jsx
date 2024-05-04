@@ -1,3 +1,5 @@
+import "./dynamicInput.css";
+
 const FormInput = ({
   type = "text",
   placeholder = "First Name",
@@ -5,10 +7,10 @@ const FormInput = ({
 }) => {
   return (
     <input
+      className="dynamicInput"
       type={type}
       placeholder={placeholder}
       aria-label={ariaLabel}
-      style={{ fontFamily: "textFont" }}
     />
   );
 };

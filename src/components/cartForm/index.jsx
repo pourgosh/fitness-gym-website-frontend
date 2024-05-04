@@ -1,6 +1,7 @@
-import { Grid } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import FormInput from "../FormInput";
 import cartBg from "../../assets/Images/cartBg.jpg";
+import "./cartForm.css";
 
 const CartForm = () => {
   return (
@@ -19,15 +20,7 @@ const CartForm = () => {
         backgroundPosition: "center",
       }}
     >
-      <form
-        style={{
-          backgroundColor: "rgba(27, 26, 25, 85%)",
-          display: "flex",
-          flexDirection: "column",
-          gap: 3,
-          padding: "30px",
-        }}
-      >
+      <form className="cartForm">
         <FormInput
           type={"text"}
           ariaLabel={"First Name"}
@@ -38,6 +31,28 @@ const CartForm = () => {
           ariaLabel={"Last Name"}
           placeholder={"Last-Name"}
         />
+        <FormInput type={"text"} ariaLabel={"Street"} placeholder={"Street"} />
+        <FormInput
+          type={"number"}
+          ariaLabel={"House-Number"}
+          placeholder={"House-Number"}
+        />
+        <FormInput type={"text"} ariaLabel={"City"} placeholder={"City"} />
+        <FormInput
+          type={"text"}
+          ariaLabel={"Country"}
+          placeholder={"Country"}
+        />
+        <FormInput type={"email"} ariaLabel={"Email"} placeholder={"E-mail"} />
+        <Button
+          variant="contained"
+          sx={{
+            height: { xs: "25px" },
+            width: { lg: "50%" },
+          }}
+        >
+          Buy
+        </Button>
       </form>
     </Grid>
   );

@@ -1,6 +1,9 @@
 .mutentIcon {
   width: 50px;
 }
+.mutentIcon img {
+  width: 100%;
+}
 @media (min-width: 1100px) {
   .mutentIcon {
     width: 80px;

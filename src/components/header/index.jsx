@@ -16,7 +16,11 @@ const Header = () => {
           display={"flex"}
           justifyContent={"center"}
         >
-          <img className="heroImg" src={heroImg} aria-hidden="true" />
+          <img
+            className="heroImg commonFilter"
+            src={heroImg}
+            aria-hidden="true"
+          />
         </Grid>
       </Grid>
     </header>

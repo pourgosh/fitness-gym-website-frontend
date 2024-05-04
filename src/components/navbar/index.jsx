@@ -34,7 +34,7 @@ const NavBar = () => {
         pl={{ xs: 1, md: 7, lg: 10 }}
         pr={{ xs: 1, md: 7 }}
         container
-        height={{ lg: 80 }}
+        py={1.5}
         sx={{ backgroundColor: "primary.sub", position: "fixed" }}
       >
         <Grid item flex={1}>
@@ -42,7 +42,6 @@ const NavBar = () => {
             <img
               src={mutentIcon}
               alt="company icon"
-              style={{ width: "100%" }}
               onClick={() => {
                 navigate("/");
               }}

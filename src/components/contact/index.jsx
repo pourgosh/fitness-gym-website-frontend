@@ -36,7 +36,11 @@ const Contact = () => {
             mr={1}
             mt={{ xs: 1, md: 4, xxl: 8, xxxl: 6 }}
           >
-            <img className="contactImg" src={contactImg} aria-hidden="true" />
+            <img
+              className="contactImg commonFilter"
+              src={contactImg}
+              aria-hidden="true"
+            />
           </Grid>
         </Grid>
       </Grid>

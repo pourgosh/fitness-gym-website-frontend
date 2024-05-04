@@ -46,7 +46,7 @@ const Goals = () => {
             justifyContent={"center"}
             mt={{ xs: 2, sm: 2, md: 3, xl: 8, xxl: 12, xxxl: 10 }}
           >
-            <img className="goalsImg" src={goalsImg} />
+            <img className="goalsImg commonFilter" src={goalsImg} />
           </Grid>
           <Grid
             item
