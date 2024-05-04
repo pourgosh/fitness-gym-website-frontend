@@ -21,7 +21,6 @@ const BottomSection = ({ supplements, navigate }) => {
             >
               <img
                 src={elem.image}
-                className="commonFilter"
                 style={{
                   border: "2px solid white",
                   width: "100%",
