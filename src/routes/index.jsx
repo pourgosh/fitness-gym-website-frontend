@@ -5,6 +5,7 @@ import WearsPage from "../views/wearsPage";
 import SupplementsPage from "../views/supplementsPage";
 import SingleWearPage from "../views/wearsPage/singleItem";
 import SingleSupplementsPage from "../views/supplementsPage/singleSupplementPage";
+import CartItemsPage from "../views/cartItemsPage";
 
 const Router = () => {
   return (
@@ -19,6 +20,7 @@ const Router = () => {
           path="products/supplements/:supplementID"
           element={<SingleSupplementsPage />}
         />
+        <Route path="/orders" element={<CartItemsPage />} />
       </Routes>
     </>
   );

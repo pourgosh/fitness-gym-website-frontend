@@ -91,7 +91,7 @@ const NavBar = () => {
           <NavLinks
             label="Cart"
             onClick={() => {
-              navigate("/cart");
+              navigate("/orders");
             }}
           />
 
@@ -131,7 +131,7 @@ const NavBar = () => {
               <NavLinks
                 label="Cart"
                 onClick={() => {
-                  navigate("/cart");
+                  navigate("/orders");
                 }}
               />
               <NavLinks

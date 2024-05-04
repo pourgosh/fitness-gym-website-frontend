@@ -1,7 +1,7 @@
 import { Box, Grid, IconButton, Stack, Typography } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const CartHeader = ({ onClickFunc }) => {
+const CartHeader = ({ onClickFunc, headerTitle = "Place Your Order" }) => {
   return (
     <>
       <Grid item display={"flex"} alignItems={"center"} sx={{ width: "90%" }}>
@@ -10,7 +10,7 @@ const CartHeader = ({ onClickFunc }) => {
           color={"primary.main"}
           sx={{ flex: 1, lineHeight: 2 }}
         >
-          Place Your Order
+          {headerTitle}
         </Typography>
         <Box
           sx={{
