@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { productsContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 import RecommendedItems from "../../components/recommendedItems";
+import CostumerCart from "./costumerCart";
 
 const CartItemsPage = () => {
   const product = useContext(productsContext);
@@ -19,11 +20,13 @@ const CartItemsPage = () => {
 
   const totalPrice = (cart) => {
     const total = cart.reduce((acc, elem) => acc + elem.price, 0);
-    return total;
+    let stringedNum = total.toString().slice(0, 7);
+    let int = Number(stringedNum);
+    return int;
   };
 
   return (
-    <main style={{ minHeight: "70dvh" }}>
+    <main style={{ minHeight: "100dvh" }}>
       <Grid container pt={{ xs: 11, lg: 15, xxxl: 17 }}>
         <Grid item flex={1} display={"flex"} px={{ xs: 2, md: 4, xl: 6 }}>
           <Box flex={1}>
@@ -46,63 +49,11 @@ const CartItemsPage = () => {
           pt={2}
           px={{ md: 15, xl: 30, xxxl: 55, xxxxl: 70 }}
         >
-          {product.cart ? (
-            product.cart.map((elem, i) => {
-              return (
-                <Grid
-                  item
-                  key={i}
-                  flex={1}
-                  height={{ xs: 150 }}
-                  sx={{ border: "2px solid white" }}
-                  display={"flex"}
-                >
-                  <img
-                    src={elem.image}
-                    alt="product.cart item image"
-                    style={{ height: "100%", width: "90px" }}
-                  />
-                  <Box display={"flex"} flexDirection={"column"} pl={2} pt={1}>
-                    <Typography
-                      variant="string"
-                      color={"primary.main"}
-                      flex={1}
-                    >
-                      {elem.title}
-                    </Typography>
+          <CostumerCart
+            cart={product.cart}
+            removeFromCart={product.removeFromCart}
+          />
 
-                    <Typography
-                      variant="string"
-                      color={"primary.main"}
-                      flex={1}
-                    >
-                      {elem.price}€
-                    </Typography>
-                  </Box>
-                  <Box
-                    flex={1}
-                    display={"flex"}
-                    justifyContent={"flex-end"}
-                    alignItems={"center"}
-                  >
-                    <Button
-                      variant="contained"
-                      sx={{
-                        height: "15px",
-                      }}
-                      onClick={() => {
-                        product.removeFromCart(elem);
-                      }}
-                    >
-                      Remove
-                    </Button>
-                  </Box>
-                </Grid>
-              );
-            })
-          ) : (
-            <h1>empty product.cart!</h1>
-          )}
           <Button
             variant="contained"
             onClick={() => {
