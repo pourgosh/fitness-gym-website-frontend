@@ -6,7 +6,7 @@ const MembersForm = () => {
     <form className="membershipForm">
       <FormInput />
       <FormInput placeholder="Last Name" ariaLabel="last-name" />
-      <FormInput placeholder="info@contact.com" ariaLabel="email" />
+      <FormInput placeholder="E-mail" ariaLabel="email" />
       <FormInput placeholder="Password" type="password" ariaLabel="password" />
       <Button
         variant={"contained"}
