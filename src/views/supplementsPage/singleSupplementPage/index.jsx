@@ -22,6 +22,7 @@ const SingleSupplementsPage = () => {
 
   useEffect(() => {
     product.getSingleItem(supplementID);
+    product.getSupplementData();
   }, []);
   return (
     <main>
@@ -99,6 +100,7 @@ const SingleSupplementsPage = () => {
             gap={5}
           >
             <RecommendedItems
+              getItem={product.getSingleItem}
               navigate={product.navigateToSingleSupplement}
               items={product.supplements}
               startItem={startItem}

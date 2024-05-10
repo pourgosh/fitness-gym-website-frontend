@@ -19,6 +19,7 @@ const SingleWearPage = () => {
 
   useEffect(() => {
     product.getSingleItem(wearID);
+    product.getWearsData();
   }, []);
   return (
     <main>
@@ -78,6 +79,7 @@ const SingleWearPage = () => {
           gap={5}
         >
           <RecommendedItems
+            getItem={product.getSingleItem}
             navigate={product.navigateToSingleWear}
             items={product.wears}
             startItem={startItem}

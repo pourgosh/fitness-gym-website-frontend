@@ -109,9 +109,8 @@ const DropDownInfo = ({
           <KeyboardArrowDownIcon />
         </Button>
         {manufacturer && supplements && (
-          <Fragment key={supplements._id}>
+          <Fragment>
             <Typography
-              key={supplements._id}
               variant="string"
               color={"primary.main"}
               sx={{ borderTop: "1px solid white", padding: 1 }}
@@ -121,11 +120,11 @@ const DropDownInfo = ({
           </Fragment>
         )}
         {alergens && supplements && (
-          <Fragment key={supplements._id}>
+          <Fragment>
             {supplements.allergens.map((elem) => {
               return (
                 <Typography
-                  key={elem._id + 201}
+                  key={elem._id}
                   variant="string"
                   color={"primary.main"}
                   sx={{ borderTop: "1px solid white", padding: 1 }}
@@ -137,7 +136,7 @@ const DropDownInfo = ({
           </Fragment>
         )}
         {ingredients && supplements && (
-          <Fragment key={supplements._id}>
+          <Fragment>
             {supplements.ingredients.map((elem) => {
               return (
                 <Typography
@@ -154,7 +153,7 @@ const DropDownInfo = ({
         )}
 
         {suppDirection && supplements && (
-          <Fragment key={supplements._id}>
+          <Fragment>
             <Typography
               variant="string"
               color={"primary.main"}
@@ -166,7 +165,7 @@ const DropDownInfo = ({
         )}
 
         {suppDescription && supplements && (
-          <Fragment key={supplements._id}>
+          <Fragment>
             <Typography
               variant="string"
               color={"primary.main"}
