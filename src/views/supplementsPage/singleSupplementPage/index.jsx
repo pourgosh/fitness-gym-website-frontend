@@ -12,7 +12,6 @@ import RecommendedItems from "../../../components/recommendedItems";
 const SingleSupplementsPage = () => {
   const { supplementID } = useParams();
   const product = useContext(productsContext);
-  const numID = parseInt(supplementID);
   const [suppDirection, setSuppDirection] = useState(false);
   const [suppDescription, setSuppDescription] = useState(false);
   const [alergens, setAlergens] = useState(false);
@@ -22,8 +21,8 @@ const SingleSupplementsPage = () => {
   const [endItem, setEndItem] = useState(14);
 
   useEffect(() => {
-    product.getSupplementData();
-  }, [product]);
+    product.getSingleItem(supplementID);
+  }, []);
   return (
     <main>
       <section>
@@ -37,34 +36,25 @@ const SingleSupplementsPage = () => {
             flexDirection={"column"}
           >
             <LeftSectionTop
-              supplements={product && product.supplements}
-              numID={numID}
+              supplements={product && product.singleItem}
               addItem={product.addToCart}
             />
           </Grid>
           <Grid item container flex={1} flexDirection={"column"}>
-            <RightSectionTop
-              supplements={product && product.supplements}
-              numID={numID}
-            />
+            <RightSectionTop supplements={product && product.singleItem} />
           </Grid>
         </Grid>
       </section>
       <section>
         <Grid container>
           <Grid item flex={1} display={"flex"} justifyContent={"center"} pt={2}>
-            {product.supplements &&
-              product.supplements.map((elem) => {
-                if (elem._id === numID) {
-                  return (
-                    <Fragment key={elem._id}>
-                      <Typography variant="string" color={"primary.main"}>
-                        {elem.price}€
-                      </Typography>
-                    </Fragment>
-                  );
-                }
-              })}
+            {product.singleItem && (
+              <Fragment key={product.singleItem._id}>
+                <Typography variant="string" color={"primary.main"}>
+                  {product.singleItem.price}€
+                </Typography>
+              </Fragment>
+            )}
           </Grid>
           <Grid
             item
@@ -79,8 +69,7 @@ const SingleSupplementsPage = () => {
               suppDirection={suppDirection}
               setSuppDirection={setSuppDirection}
               suppDescription={suppDescription}
-              supplements={product.supplements && product.supplements}
-              numID={numID}
+              supplements={product.singleItem && product.singleItem}
               alergens={alergens}
               ingredients={ingredients}
               setAlergens={setAlergens}

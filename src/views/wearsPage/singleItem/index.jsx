@@ -20,7 +20,7 @@ const SingleWearPage = () => {
 
   useEffect(() => {
     product.getWearsData();
-  }, [product]);
+  }, []);
   return (
     <main>
       <Grid container pt={{ xs: 12, lg: 15, xl: 17, xxxl: 19 }}>

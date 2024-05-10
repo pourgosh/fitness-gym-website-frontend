@@ -9,7 +9,7 @@ const WearsPage = () => {
 
   useEffect(() => {
     products.getWearsData();
-  }, [products]);
+  }, []);
 
   return (
     <main>

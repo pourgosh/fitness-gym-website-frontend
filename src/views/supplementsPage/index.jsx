@@ -9,7 +9,7 @@ const SupplementsPage = () => {
 
   useEffect(() => {
     products.getSupplementData();
-  }, [products]);
+  }, []);
   return (
     <main>
       <SupplementsTop />

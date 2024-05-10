@@ -16,7 +16,7 @@ const CartItemsPage = () => {
   useEffect(() => {
     product.getSupplementData();
     product.getWearsData();
-  });
+  }, []);
 
   const totalPrice = (cart) => {
     const total = cart.reduce((acc, elem) => acc + elem.price, 0);
