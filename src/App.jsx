@@ -2,7 +2,7 @@ import Footer from "./components/footer";
 import NavBar from "./components/navbar";
 import Router from "./routes";
 //import mockSupplements from "./JSON/supplements.json";
-import mockWears from "./JSON/wears.json";
+//import mockWears from "./JSON/wears.json";
 import { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -36,8 +36,17 @@ function App() {
     const item = response.data;
     setSingleItem(item);
   };
-  const getWearsData = () => {
-    setWears(mockWears);
+  const getWearsData = async () => {
+    try {
+      const response = await axios.get(`${ORIGIN_URL}/product`);
+      setWears(
+        response.data.filter((elem) => {
+          return elem.productType === "wear";
+        })
+      );
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   const navigateToSingleWear = (wearID) => {

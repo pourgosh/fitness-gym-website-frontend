@@ -8,7 +8,6 @@ const DropDownInfo = ({
   manufactur,
   description,
   wears,
-  numID,
 }) => {
   const itemInfo = () => {
     return (
@@ -38,40 +37,28 @@ const DropDownInfo = ({
           Description
           <KeyboardArrowDownIcon />
         </Button>
-        {manufactur &&
-          wears &&
-          wears.map((elem) => {
-            if (elem._id === numID) {
-              return (
-                <Fragment key={elem._id}>
-                  <Typography
-                    variant="string"
-                    color={"primary.main"}
-                    sx={{ borderTop: "1px solid white", pt: 2 }}
-                  >
-                    {elem.manufacturer}
-                  </Typography>
-                </Fragment>
-              );
-            }
-          })}
-        {description &&
-          wears &&
-          wears.map((elem) => {
-            if (elem._id === numID) {
-              return (
-                <Fragment key={elem._id}>
-                  <Typography
-                    color={"primary.main"}
-                    variant="string"
-                    sx={{ borderTop: "1px solid white", pt: 2 }}
-                  >
-                    {elem.description}
-                  </Typography>
-                </Fragment>
-              );
-            }
-          })}
+        {manufactur && wears && (
+          <Fragment key={wears._id}>
+            <Typography
+              variant="string"
+              color={"primary.main"}
+              sx={{ borderTop: "1px solid white", pt: 2 }}
+            >
+              {wears.manufacturer}
+            </Typography>
+          </Fragment>
+        )}
+        {description && wears && (
+          <Fragment key={wears._id}>
+            <Typography
+              color={"primary.main"}
+              variant="string"
+              sx={{ borderTop: "1px solid white", pt: 2 }}
+            >
+              {wears.description}
+            </Typography>
+          </Fragment>
+        )}
       </>
     );
   };
