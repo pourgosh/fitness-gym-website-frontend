@@ -69,6 +69,15 @@ function App() {
     );
   };
 
+  const submitOrder = async (e, order) => {
+    e.preventDefault();
+    try {
+      await axios.post(`${ORIGIN_URL}/order`, order);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <>
       <productsContext.Provider
@@ -85,6 +94,7 @@ function App() {
           navigateToSingleWear,
           navigateToSingleSupplement,
           getSingleItem,
+          submitOrder,
         }}
       >
         <NavBar />

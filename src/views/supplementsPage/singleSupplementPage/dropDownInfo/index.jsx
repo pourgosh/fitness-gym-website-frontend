@@ -124,7 +124,7 @@ const DropDownInfo = ({
             {supplements.allergens.map((elem) => {
               return (
                 <Typography
-                  key={elem._id}
+                  key={elem.title}
                   variant="string"
                   color={"primary.main"}
                   sx={{ borderTop: "1px solid white", padding: 1 }}
