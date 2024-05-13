@@ -32,7 +32,6 @@ const CartPage = () => {
     paymentMethod: "",
     totalCost: totalPrice(product.cart),
   });
-  console.log(product);
 
   const cartItemsDisplayer = () => {
     setCartItems(!cartItems);

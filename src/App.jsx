@@ -78,6 +78,15 @@ function App() {
     }
   };
 
+  const submitMembersForm = async (e, member) => {
+    e.preventDefault();
+    try {
+      await axios.post(`${ORIGIN_URL}/members`, member);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <>
       <productsContext.Provider
@@ -95,6 +104,7 @@ function App() {
           navigateToSingleSupplement,
           getSingleItem,
           submitOrder,
+          submitMembersForm,
         }}
       >
         <NavBar />
