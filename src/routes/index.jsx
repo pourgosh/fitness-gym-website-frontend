@@ -6,6 +6,7 @@ import SupplementsPage from "../views/supplementsPage";
 import SingleWearPage from "../views/wearsPage/singleItem";
 import SingleSupplementsPage from "../views/supplementsPage/singleSupplementPage";
 import CartItemsPage from "../views/cartItemsPage";
+import PageNotFound from "../views/pageNotFound";
 
 const Router = () => {
   return (
@@ -21,6 +22,7 @@ const Router = () => {
           element={<SingleSupplementsPage />}
         />
         <Route path="/orders" element={<CartItemsPage />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
   );

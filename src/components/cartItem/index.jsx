@@ -9,8 +9,6 @@ const CartItem = ({ totalPrice }) => {
   const cartItem = (item) => {
     return (
       <Box
-        key={item._id}
-        position={"relative"}
         sx={{
           width: { xs: "80px", lg: "100px", xxl: "150px" },
           height: { xs: "100px", lg: "120px", xxl: "170px" },
@@ -59,9 +57,9 @@ const CartItem = ({ totalPrice }) => {
       }}
     >
       {product.cart.length ? (
-        product.cart.map((elem) => {
+        product.cart.map((elem, i) => {
           return (
-            <Fragment key={elem._id}>
+            <Fragment key={i}>
               {cartItem(elem)}
               <Stack
                 direction="row"
