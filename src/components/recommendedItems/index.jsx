@@ -1,6 +1,6 @@
 import "./recommendedItems.css";
 
-const RecommendedItems = ({ items, startItem, endItem, navigate }) => {
+const RecommendedItems = ({ getItem, items, startItem, endItem, navigate }) => {
   const carouselImages = () => {
     return (
       <>
@@ -14,6 +14,7 @@ const RecommendedItems = ({ items, startItem, endItem, navigate }) => {
                   src={elem.image}
                   onClick={() => {
                     navigate(elem._id);
+                    getItem(elem._id);
                   }}
                 />
               );

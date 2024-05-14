@@ -1,26 +1,52 @@
 import Footer from "./components/footer";
 import NavBar from "./components/navbar";
 import Router from "./routes";
-import mockSupplements from "./JSON/supplements.json";
-import mockWears from "./JSON/wears.json";
+//import mockSupplements from "./JSON/supplements.json";
+//import mockWears from "./JSON/wears.json";
 import { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const productsContext = createContext(null);
 
+const ORIGIN_URL = import.meta.env.VITE_ORIGN_URL;
+
 function App() {
   const [supplements, setSupplements] = useState(null);
+  const [singleItem, setSingleItem] = useState(null);
   const [wears, setWears] = useState(null);
   const [cart, setCart] = useState([]);
   const navigate = useNavigate();
 
-  const getSupplementData = () => {
-    setSupplements(mockSupplements);
+  const getSupplementData = async () => {
+    try {
+      const response = await axios.get(`${ORIGIN_URL}/product`);
+      setSupplements(
+        response.data.filter((elem) => {
+          return elem.productType === "supplement";
+        })
+      );
+    } catch (err) {
+      console.error(err);
+    }
   };
-
-  const getWearsData = () => {
-    setWears(mockWears);
+  const getSingleItem = async (id) => {
+    const response = await axios.get(`${ORIGIN_URL}/product/${id}`);
+    const item = response.data;
+    setSingleItem(item);
+  };
+  const getWearsData = async () => {
+    try {
+      const response = await axios.get(`${ORIGIN_URL}/product`);
+      setWears(
+        response.data.filter((elem) => {
+          return elem.productType === "wear";
+        })
+      );
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   const navigateToSingleWear = (wearID) => {
@@ -43,6 +69,24 @@ function App() {
     );
   };
 
+  const submitOrder = async (e, order) => {
+    e.preventDefault();
+    try {
+      await axios.post(`${ORIGIN_URL}/order`, order);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const submitMembersForm = async (e, member) => {
+    e.preventDefault();
+    try {
+      await axios.post(`${ORIGIN_URL}/members`, member);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <>
       <productsContext.Provider
@@ -50,6 +94,7 @@ function App() {
           cart,
           supplements,
           wears,
+          singleItem,
           setCart,
           addToCart,
           removeFromCart,
@@ -57,6 +102,9 @@ function App() {
           getSupplementData,
           navigateToSingleWear,
           navigateToSingleSupplement,
+          getSingleItem,
+          submitOrder,
+          submitMembersForm,
         }}
       >
         <NavBar />

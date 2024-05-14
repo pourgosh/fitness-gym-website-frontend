@@ -14,7 +14,6 @@ const DropDownInfo = ({
   setIngredients,
   manufacturer,
   setManufacturer,
-  numID,
 }) => {
   const itemInfo = () => {
     return (
@@ -109,102 +108,73 @@ const DropDownInfo = ({
           Manufacturer
           <KeyboardArrowDownIcon />
         </Button>
-        {manufacturer &&
-          supplements &&
-          supplements.map((elem) => {
-            if (elem._id === numID) {
+        {manufacturer && supplements && (
+          <Fragment>
+            <Typography
+              variant="string"
+              color={"primary.main"}
+              sx={{ borderTop: "1px solid white", padding: 1 }}
+            >
+              {supplements.manufacturer}
+            </Typography>
+          </Fragment>
+        )}
+        {alergens && supplements && (
+          <Fragment>
+            {supplements.allergens.map((elem) => {
               return (
-                <Fragment key={elem._id + 100}>
-                  <Typography
-                    key={elem._id + 200}
-                    variant="string"
-                    color={"primary.main"}
-                    sx={{ borderTop: "1px solid white", padding: 1 }}
-                  >
-                    {elem.manufacturer}
-                  </Typography>
-                </Fragment>
+                <Typography
+                  key={elem.title}
+                  variant="string"
+                  color={"primary.main"}
+                  sx={{ borderTop: "1px solid white", padding: 1 }}
+                >
+                  {elem}
+                </Typography>
               );
-            }
-          })}
-        {alergens &&
-          supplements &&
-          supplements.map((elem) => {
-            if (elem._id === numID) {
+            })}
+          </Fragment>
+        )}
+        {ingredients && supplements && (
+          <Fragment>
+            {supplements.ingredients.map((elem) => {
               return (
-                <Fragment key={elem._id + 101}>
-                  {elem.allergens.map((elem) => {
-                    return (
-                      <Typography
-                        key={elem._id + 201}
-                        variant="string"
-                        color={"primary.main"}
-                        sx={{ borderTop: "1px solid white", padding: 1 }}
-                      >
-                        {elem}
-                      </Typography>
-                    );
-                  })}
-                </Fragment>
+                <Typography
+                  key={elem._id}
+                  variant="string"
+                  color={"primary.main"}
+                  sx={{ borderTop: "1px solid white", padding: 1 }}
+                >
+                  {elem}
+                </Typography>
               );
-            }
-          })}
-        {ingredients &&
-          supplements &&
-          supplements.map((elem) => {
-            if (elem._id === numID) {
-              return (
-                <Fragment key={elem._id + 102}>
-                  {elem.ingredients.map((elem) => {
-                    return (
-                      <Typography
-                        key={elem._id + 202}
-                        variant="string"
-                        color={"primary.main"}
-                        sx={{ borderTop: "1px solid white", padding: 1 }}
-                      >
-                        {elem}
-                      </Typography>
-                    );
-                  })}
-                </Fragment>
-              );
-            }
-          })}
-        {suppDirection &&
-          supplements &&
-          supplements.map((elem) => {
-            if (elem._id === numID) {
-              return (
-                <Fragment key={elem._id + 103}>
-                  <Typography
-                    variant="string"
-                    color={"primary.main"}
-                    sx={{ borderTop: "1px solid white", pt: 2 }}
-                  >
-                    {elem.how_to_use}
-                  </Typography>
-                </Fragment>
-              );
-            }
-          })}
-        {suppDescription &&
-          supplements &&
-          supplements.map((elem) => {
-            if (elem._id === numID) {
-              return (
-                <Fragment key={elem._id + 104}>
-                  <Typography
-                    variant="string"
-                    color={"primary.main"}
-                    sx={{ borderTop: "1px solid white", pt: 2 }}
-                  >
-                    {elem.description}
-                  </Typography>
-                </Fragment>
-              );
-            }
-          })}
+            })}
+          </Fragment>
+        )}
+
+        {suppDirection && supplements && (
+          <Fragment>
+            <Typography
+              variant="string"
+              color={"primary.main"}
+              sx={{ borderTop: "1px solid white", pt: 2 }}
+            >
+              {supplements.direction}
+            </Typography>
+          </Fragment>
+        )}
+
+        {suppDescription && supplements && (
+          <Fragment>
+            <Typography
+              variant="string"
+              color={"primary.main"}
+              sx={{ borderTop: "1px solid white", pt: 2 }}
+            >
+              {supplements.description}
+            </Typography>
+          </Fragment>
+        )}
       </>
     );
   };

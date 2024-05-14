@@ -1,15 +1,15 @@
-import { Box, Grid, IconButton, Stack } from "@mui/material";
+import { Box, Grid, IconButton, Stack, Typography } from "@mui/material";
 import { Fragment, useContext } from "react";
 import { productsContext } from "../../App";
 import RemoveIcon from "@mui/icons-material/Remove";
 
-const CartItem = () => {
+const CartItem = ({ totalPrice }) => {
   const product = useContext(productsContext);
 
   const cartItem = (item) => {
     return (
       <Box
-        key={item._id * Math.floor(Math.random() * 100)}
+        key={item._id}
         position={"relative"}
         sx={{
           width: { xs: "80px", lg: "100px", xxl: "150px" },
@@ -61,7 +61,7 @@ const CartItem = () => {
       {product.cart.length ? (
         product.cart.map((elem) => {
           return (
-            <Fragment key={elem._id * Math.floor(Math.random() * 200)}>
+            <Fragment key={elem._id}>
               {cartItem(elem)}
               <Stack
                 direction="row"
@@ -89,6 +89,12 @@ const CartItem = () => {
       ) : !product.cart.length ? (
         <>{emptyCart()}</>
       ) : null}
+      <Typography variant="string" color={"primary.main"}>
+        Total
+      </Typography>
+      <Typography variant="string" color={"primary.main"}>
+        {totalPrice(product.cart)}€
+      </Typography>
     </Grid>
   );
 };

@@ -2,13 +2,43 @@ import { Grid } from "@mui/material";
 import CartForm from "../../components/cartForm";
 import CartHeader from "../../components/cartHeader";
 import CartItem from "../../components/cartItem";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { productsContext } from "../../App";
 
 const CartPage = () => {
+  const product = useContext(productsContext);
   const [cartItems, setCartItems] = useState(true);
+
+  const totalPrice = (cart) => {
+    const total = cart.reduce((acc, elem) => acc + elem.price, 0);
+    let stringedNum = total.toString().slice(0, 7);
+    let int = Number(stringedNum);
+    return int;
+  };
+
+  const [clientInfo, setClientInfo] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    order: product.cart.map((elem) => {
+      return elem._id;
+    }),
+    address: {
+      country: "",
+      city: "",
+      street: "",
+      houseNumber: 0,
+    },
+    paymentMethod: "",
+    totalCost: totalPrice(product.cart),
+  });
 
   const cartItemsDisplayer = () => {
     setCartItems(!cartItems);
+  };
+
+  const onSubmit = (e, order) => {
+    product.submitOrder(e, order);
   };
 
   return (
@@ -30,9 +60,13 @@ const CartPage = () => {
             border: { xs: "2px solid #D9D9D9", between: "none" },
           }}
         >
-          <CartForm />
+          <CartForm
+            clientInfo={clientInfo}
+            setClientInfo={setClientInfo}
+            onSubmit={onSubmit}
+          />
         </Grid>
-        {cartItems && <CartItem />}
+        {cartItems && <CartItem totalPrice={totalPrice} />}
       </Grid>
     </main>
   );

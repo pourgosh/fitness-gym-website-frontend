@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 
-const RightSectionTop = ({ wears, numID }) => {
-  const displayItemInfo = (wears, numID) => {
+const RightSectionTop = ({ wears }) => {
+  const displayItemInfo = (wears) => {
     return (
       <>
         <Grid item flex={1} display={"flex"} alignItems={"center"}>
@@ -12,29 +12,19 @@ const RightSectionTop = ({ wears, numID }) => {
               lineHeight: 1.5,
             }}
           >
-            {wears &&
-              wears.map((elem) => {
-                if (elem._id === numID) {
-                  return elem.title;
-                }
-              })}
+            {wears && wears.title}
           </Typography>
         </Grid>
         <Grid item display={"flex"} alignItems={"flex-start"} flex={{ xs: 1 }}>
           <Typography variant="string" color={"primary.main"}>
-            {wears &&
-              wears.map((elem) => {
-                if (elem._id === numID) {
-                  return elem.description;
-                }
-              })}
+            {wears && wears.description}
           </Typography>
         </Grid>
       </>
     );
   };
 
-  return <>{displayItemInfo(wears, numID)}</>;
+  return <>{displayItemInfo(wears)}</>;
 };
 
 export default RightSectionTop;

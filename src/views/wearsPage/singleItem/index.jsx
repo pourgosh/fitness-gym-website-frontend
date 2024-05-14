@@ -12,15 +12,15 @@ import RecommendedItems from "../../../components/recommendedItems";
 const SingleWearPage = () => {
   const { wearID } = useParams();
   const product = useContext(productsContext);
-  const numID = parseInt(wearID);
   const [manufactur, setManufacture] = useState(false);
   const [description, setDescription] = useState(false);
   const [startItem, setStartItem] = useState(5);
   const [endItem, setEndItem] = useState(9);
 
   useEffect(() => {
+    product.getSingleItem(wearID);
     product.getWearsData();
-  }, [product]);
+  }, []);
   return (
     <main>
       <Grid container pt={{ xs: 12, lg: 15, xl: 17, xxxl: 19 }}>
@@ -33,29 +33,23 @@ const SingleWearPage = () => {
           flexDirection={"column"}
         >
           <LeftSectionTop
-            wears={product && product.wears}
-            numID={numID}
+            wears={product && product.singleItem}
             addItem={product.addToCart}
           />
         </Grid>
         <Grid item container flex={1} flexDirection={"column"}>
-          <RightSectionTop wears={product && product.wears} numID={numID} />
+          <RightSectionTop wears={product && product.singleItem} />
         </Grid>
       </Grid>
       <Grid container>
         <Grid item flex={1} display={"flex"} justifyContent={"center"} pt={2}>
-          {product.wears &&
-            product.wears.map((elem) => {
-              if (elem._id === numID) {
-                return (
-                  <Fragment key={elem._id}>
-                    <Typography variant="string" color={"primary.main"}>
-                      {elem.price}€
-                    </Typography>
-                  </Fragment>
-                );
-              }
-            })}
+          {product.singleItem && (
+            <Fragment key={product.singleItem._id}>
+              <Typography variant="string" color={"primary.main"}>
+                {product.singleItem.price}€
+              </Typography>
+            </Fragment>
+          )}
         </Grid>
         <Grid
           item
@@ -70,8 +64,7 @@ const SingleWearPage = () => {
             manufactur={manufactur}
             setManufacture={setManufacture}
             description={description}
-            wears={product.wears && product.wears}
-            numID={numID}
+            wears={product.singleItem && product.singleItem}
           />
         </Grid>
       </Grid>
@@ -86,6 +79,7 @@ const SingleWearPage = () => {
           gap={5}
         >
           <RecommendedItems
+            getItem={product.getSingleItem}
             navigate={product.navigateToSingleWear}
             items={product.wears}
             startItem={startItem}
