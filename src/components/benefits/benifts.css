@@ -1,0 +1,16 @@
+.benefitsImg {
+  width: 100%;
+  height: auto;
+  border: 2px solid #d9d9d9;
+}
+
+@media (min-width: 900px) {
+  .benefitsImg {
+    width: 80%;
+  }
+}
+@media (min-width: 2000px) {
+  .benefitsImg {
+    width: 50%;
+  }
+}

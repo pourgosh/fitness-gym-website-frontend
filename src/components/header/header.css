@@ -1,0 +1,12 @@
+.heroImg {
+  width: 100%;
+  height: auto;
+  border: 2px solid #d9d9d9;
+}
+
+@media (min-width: 800px) {
+  .heroImg {
+    width: 90%;
+    object-fit: cover;
+  }
+}

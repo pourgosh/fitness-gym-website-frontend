@@ -125,4 +125,23 @@ table {
 #root {
   padding: 0;
   margin: 0;
+  background-color: #121212;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url("./assets/font/AlfaSlabOne-Regular.ttf") format("trueType");
+}
+@font-face {
+  font-family: textFont;
+  src: url("./assets/font/Lato-Regular.ttf") format("trueType");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.commonFilter {
+  filter: contrast(90%) saturate(70%) brightness(70%);
 }
