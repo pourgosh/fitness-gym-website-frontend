@@ -2,4 +2,4 @@
 
 # Web-site Link
 
-### https://mutent-fitness.netlify.app
+### https://mutant-fitness.netlify.app
