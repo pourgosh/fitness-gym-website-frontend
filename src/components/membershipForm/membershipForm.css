@@ -4,29 +4,23 @@
   background-color: rgba(27, 26, 25, 85%);
   gap: 10px;
   padding: 15px;
-  width: 100%;
-}
-.memberFormBg {
-  width: 100%;
-  height: auto;
-  border: 2px solid #d9d9d9;
-}
-
-.memberFormBg2 {
-  width: 100%;
-  height: auto;
-  transform: scaleX(-1);
-  border: 2px solid #d9d9d9;
+  width: 40%;
 }
 
 @media (min-width: 550px) {
   .membershipForm {
     justify-content: center;
+    gap: 1rem;
+    input {
+      font-size: 15px;
+      height: 30px;
+    }
   }
 }
 @media (min-width: 768px) {
   .membershipForm {
     justify-content: center;
+    width: 30%;
     input {
       font-size: 20px;
     }
@@ -35,24 +29,25 @@
 @media (min-width: 1200px) {
   .membershipForm {
     justify-content: center;
-    width: 60%;
-    gap: 1rem;
+    align-items: center;
+    width: 45%;
+    gap: 2rem;
+    padding-top: 30px;
     input {
       font-size: 18px;
+      width: 70%;
     }
-  }
-  .memberFormBg {
-    width: 50%;
-  }
-
-  .memberFormBg2 {
-    width: 50%;
   }
 }
 
 @media (min-width: 2000px) {
   .membershipForm {
+    width: 35%;
+    padding-top: 40px;
     input {
+      height: 20%;
+      width: 75%;
+      text-align: center;
       font-size: 30px;
     }
   }
