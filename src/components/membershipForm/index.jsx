@@ -1,8 +1,8 @@
 import { Grid, Typography } from "@mui/material";
-import formBgOne from "../../assets/Images/ecf37aa0bee04109855c052d4bed64b9.jpg";
-import formBgTwo from "../../assets/Images/images.jpeg";
 import MembersForm from "./Form";
 import "./membershipForm.css";
+import formBgOne from "../../assets/Images/ecf37aa0bee04109855c052d4bed64b9.jpg";
+import formBgTwo from "../../assets/Images/images.jpeg";
 
 const MembershipForm = () => {
   return (
@@ -22,42 +22,32 @@ const MembershipForm = () => {
         </Grid>
         <Grid
           container
-          item
           mt={{ xs: 0, sm: 2, md: 3, xl: 8 }}
-          position={"relative"}
-          width={"100%"}
-          sx={{ overflow: "hidden" }}
+          px={{ between: 6, md: 13, lg: 22, xl: 30, xxl: 33, xxxl: 50 }}
+          justifyContent={"center"}
+          height={{
+            sm: 250,
+            between: 350,
+            md: 450,
+            lg: 600,
+            xxxl: 800,
+          }}
         >
           <Grid
             item
             display={"flex"}
-            justifyContent={"flex-end"}
+            justifyContent={"center"}
+            alignItems={"center"}
             flex={1}
-            pl={1}
-          >
-            <img className="memberFormBg commonFilter" src={formBgTwo} />
-          </Grid>
-          <Grid
-            item
-            position={"absolute"}
             sx={{
-              top: { xs: "10%", sm: "20%", lg: "25%", xxl: "30%" },
-              left: {
-                xs: "30%",
-                sm: "32%",
-                md: "35%",
-                lg: "36%",
-                between2: "41%",
-                xxl: "42%",
-              },
-              zIndex: 100000,
-              width: "25%",
+              backgroundImage: `url(${formBgOne}),url(${formBgTwo})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "left,right",
+              backgroundSize: "50%",
+              filter: "brightness(0.8) contrast(1)",
             }}
           >
             <MembersForm />
-          </Grid>
-          <Grid item flex={1} pr={1}>
-            <img className="memberFormBg2 commonFilter" src={formBgOne} />
           </Grid>
         </Grid>
       </Grid>

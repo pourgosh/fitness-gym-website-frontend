@@ -66,8 +66,9 @@ const MembersForm = () => {
         variant={"contained"}
         type="submit"
         sx={{
+          width: { xs: "80%", xxl: "60%" },
+          marginTop: { xs: "10px", xxxl: "30px" },
           alignSelf: "center",
-          height: { xs: "20px", md: "25px", xl: "30px" },
           color: "black",
           textAlign: "center",
           textTransform: "none",
