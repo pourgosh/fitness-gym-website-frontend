@@ -18,6 +18,7 @@ function App() {
   const [wears, setWears] = useState(null);
   const [cart, setCart] = useState([]);
   const navigate = useNavigate();
+  axios.defaults.withCredentials = true;
 
   const getSupplementData = async () => {
     try {
